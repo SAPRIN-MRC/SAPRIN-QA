@@ -4,17 +4,43 @@
   <extended_description/>
   <job_version/>
   <job_status>0</job_status>
-  <directory>/public/iSHARE</directory>
+  <directory>/</directory>
   <created_user>-</created_user>
   <created_date>2013/09/02 13:14:21.690</created_date>
   <modified_user>tmudzana</modified_user>
-  <modified_date>2019/10/08 09:11:02.382</modified_date>
+  <modified_date>2020/10/22 17:48:07.644</modified_date>
   <parameters>
     </parameters>
   <slaveservers>
     <slaveserver>
+      <name>acs-etl01</name>
+      <hostname>acs-etl01</hostname>
+      <port>8080</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
       <name>ACS-ETL01 Carte</name>
       <hostname>ACS-ETL01</hostname>
+      <port>8081</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>Carte</name>
+      <hostname>Pentaho.ahri.org</hostname>
       <port>8081</port>
       <webAppName/>
       <username>cluster</username>
@@ -39,9 +65,22 @@
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
-      <name>Carte</name>
-      <hostname>Pentaho.ahri.org</hostname>
-      <port>8081</port>
+      <name>cm-metricsapp01</name>
+      <hostname>cm-metricsapp01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb01</name>
+      <hostname>cm-metricsdb01</hostname>
+      <port>40000</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -49,6 +88,45 @@
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb02</name>
+      <hostname>cm-metricsdb02</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb03</name>
+      <hostname>cm-metricsdb03</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsetl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -62,6 +140,19 @@
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>etl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -81,6 +172,71 @@
       <name>ID-Server</name>
       <hostname>localhost</hostname>
       <port>8181</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local1</name>
+      <hostname>localhost</hostname>
+      <port>40001</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local2</name>
+      <hostname>localhost</hostname>
+      <port>40002</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local3</name>
+      <hostname>localhost</hostname>
+      <port>40003</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local4</name>
+      <hostname>localhost</hostname>
+      <port>40004</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local5</name>
+      <hostname>localhost</hostname>
+      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -159,162 +315,6 @@
       <name>Slave3</name>
       <hostname>localhost</hostname>
       <port>8084</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>acs-etl01</name>
-      <hostname>acs-etl01</hostname>
-      <port>8080</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsapp01</name>
-      <hostname>cm-metricsapp01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb01</name>
-      <hostname>cm-metricsdb01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb02</name>
-      <hostname>cm-metricsdb02</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb03</name>
-      <hostname>cm-metricsdb03</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsetl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>etl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local1</name>
-      <hostname>localhost</hostname>
-      <port>40001</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local2</name>
-      <hostname>localhost</hostname>
-      <port>40002</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local3</name>
-      <hostname>localhost</hostname>
-      <port>40003</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local4</name>
-      <hostname>localhost</hostname>
-      <port>40004</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local5</name>
-      <hostname>localhost</hostname>
-      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -654,6 +654,7 @@
       <name>START</name>
       <description/>
       <type>SPECIAL</type>
+      <attributes/>
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -669,11 +670,13 @@
       <nr>0</nr>
       <xloc>64</xloc>
       <yloc>48</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J01 Produce Raw Core From Staging Tables</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -704,21 +707,25 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>144</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Success</name>
       <description/>
       <type>SUCCESS</type>
+      <attributes/>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>1616</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display Msgbox Info</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>All Jobs Completed Successfully !!!</bodymessage>
       <titremessage>Success</titremessage>
       <parallel>N</parallel>
@@ -726,11 +733,13 @@
       <nr>0</nr>
       <xloc>1056</xloc>
       <yloc>1616</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J02 Data Quality Metrics</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -761,11 +770,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>240</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J03 Data Cleaning</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -796,11 +807,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>336</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J04 Data Anonymisation</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -831,11 +844,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>624</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J05 Consolidate Start and End Events</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -866,11 +881,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>720</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J06 Verify Temporal Integrity</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -901,11 +918,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>816</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J07 Update Event Timing</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -936,11 +955,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>912</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J08 Insert Calendar Events</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -971,11 +992,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>1008</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J09 Produce Final Core MicroData Files</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -1006,11 +1029,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>1104</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J11 Generate Indicators</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -1041,11 +1066,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>1312</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J00 Create Intermediate Tables</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -1076,13 +1103,15 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>48</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Set variables</name>
       <description/>
       <type>SET_VARIABLES</type>
+      <attributes/>
       <replacevars>Y</replacevars>
-      <filename>D:\Data\iSHARE\MasterJob_ZA011_Ops.properties</filename>
+      <filename>C:\Source\Repos\iSHARE\Properties\MasterJob_ZA011_Ops.properties</filename>
       <file_variable_type>JVM</file_variable_type>
       <fields>
         <field>
@@ -1100,12 +1129,14 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>192</xloc>
-      <yloc>32</yloc>
+      <yloc>48</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J00</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1123,11 +1154,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>48</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J01</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1145,11 +1178,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>144</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J02</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1167,11 +1202,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>240</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J03</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1189,11 +1226,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>336</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J04</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1211,11 +1250,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>624</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J05</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1233,11 +1274,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>720</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J06</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1255,11 +1298,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>816</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J07</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1277,11 +1322,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>912</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J08</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1299,11 +1346,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>1008</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J09</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1321,11 +1370,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>1104</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J10</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1343,11 +1394,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>1216</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J11</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1365,11 +1418,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>1312</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J00 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J00 Create Intermediate Tables failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1377,11 +1432,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>48</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J01 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J01 Produce Raw Core From Staging Tables failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1389,11 +1446,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>144</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J02 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J02 Data Quality Metrics failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1401,11 +1460,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>240</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J03 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J03 Data Cleaning failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1413,11 +1474,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>336</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J04 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J04 Data Anonymisation failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1425,11 +1488,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>624</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J05 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J05 Consolidate Start and End Events failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1437,11 +1502,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>720</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J02 Data Quality Metrics (2)</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -1472,11 +1539,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>528</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J02 Failed 2</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Redo CORE J02 Data Quality Metrics failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1484,11 +1553,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>528</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Set Input Table name</name>
       <description/>
       <type>SET_VARIABLES</type>
+      <attributes/>
       <replacevars>Y</replacevars>
       <filename/>
       <file_variable_type>JVM</file_variable_type>
@@ -1509,11 +1580,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>432</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J06 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J06 Verify Temporal Integrity failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1521,11 +1594,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>816</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J07 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J07 Update Event Timing failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1533,11 +1608,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>912</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J08 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J08 Insert Calendar Events failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1545,11 +1622,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>1008</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J09 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J09 Produce Final Core MicroData Files failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1557,11 +1636,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>1104</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J10 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J10 Prepare Data Quality Feedback failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1569,11 +1650,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>1216</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J11 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J11 Generate Indicators failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1581,11 +1664,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>1312</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J12 Calculate Fertility Indicators</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -1616,11 +1701,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>1408</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J12</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1638,11 +1725,13 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>1408</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Display J12 Failed</name>
       <description/>
       <type>MSGBOX_INFO</type>
+      <attributes/>
       <bodymessage>Job CORE J12 Generate Fertility Indicators failed</bodymessage>
       <titremessage>Job Failed</titremessage>
       <parallel>N</parallel>
@@ -1650,11 +1739,13 @@
       <nr>0</nr>
       <xloc>1040</xloc>
       <yloc>1408</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Create a folder</name>
       <description/>
       <type>CREATE_FOLDER</type>
+      <attributes/>
       <foldername>${OutputDirectory}</foldername>
       <fail_of_folder_exists>N</fail_of_folder_exists>
       <parallel>N</parallel>
@@ -1662,11 +1753,13 @@
       <nr>0</nr>
       <xloc>352</xloc>
       <yloc>48</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Core J10 Record Counts</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -1697,11 +1790,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>1216</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>SAPRIN01 Get Indicators</name>
       <description/>
       <type>JOB</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <job_object_id/>
       <filename/>
@@ -1732,11 +1827,13 @@
       <nr>0</nr>
       <xloc>800</xloc>
       <yloc>1520</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Start J13</name>
       <description/>
       <type>SIMPLE_EVAL</type>
+      <attributes/>
       <valuetype>variable</valuetype>
       <fieldname/>
       <variablename>${StartingJob}</variablename>
@@ -1754,6 +1851,7 @@
       <nr>0</nr>
       <xloc>560</xloc>
       <yloc>1520</yloc>
+      <attributes_kjc/>
     </entry>
   </entries>
   <hops>
