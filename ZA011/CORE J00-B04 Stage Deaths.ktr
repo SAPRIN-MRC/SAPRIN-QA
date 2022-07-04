@@ -6,7 +6,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/public/iSHARE/ZA011</directory>
+    <directory>/SAPRIN-QA/ZA011</directory>
     <parameters>
     </parameters>
     <log>
@@ -424,8 +424,34 @@
     </partitionschemas>
     <slaveservers>
       <slaveserver>
+        <name>acs-etl01</name>
+        <hostname>acs-etl01</hostname>
+        <port>8080</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
         <name>ACS-ETL01 Carte</name>
         <hostname>ACS-ETL01</hostname>
+        <port>8081</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Carte</name>
+        <hostname>Pentaho.ahri.org</hostname>
         <port>8081</port>
         <webAppName/>
         <username>cluster</username>
@@ -450,9 +476,22 @@
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
-        <name>Carte</name>
-        <hostname>Pentaho.ahri.org</hostname>
-        <port>8081</port>
+        <name>cm-metricsapp01</name>
+        <hostname>cm-metricsapp01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb01</name>
+        <hostname>cm-metricsdb01</hostname>
+        <port>40000</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -460,6 +499,45 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb02</name>
+        <hostname>cm-metricsdb02</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb03</name>
+        <hostname>cm-metricsdb03</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsetl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -473,6 +551,19 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>etl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -492,6 +583,71 @@
         <name>ID-Server</name>
         <hostname>localhost</hostname>
         <port>8181</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local1</name>
+        <hostname>localhost</hostname>
+        <port>40001</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local2</name>
+        <hostname>localhost</hostname>
+        <port>40002</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local3</name>
+        <hostname>localhost</hostname>
+        <port>40003</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local4</name>
+        <hostname>localhost</hostname>
+        <port>40004</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local5</name>
+        <hostname>localhost</hostname>
+        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -570,162 +726,6 @@
         <name>Slave3</name>
         <hostname>localhost</hostname>
         <port>8084</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>acs-etl01</name>
-        <hostname>acs-etl01</hostname>
-        <port>8080</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsapp01</name>
-        <hostname>cm-metricsapp01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb01</name>
-        <hostname>cm-metricsdb01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb02</name>
-        <hostname>cm-metricsdb02</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb03</name>
-        <hostname>cm-metricsdb03</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsetl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>etl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local1</name>
-        <hostname>localhost</hostname>
-        <port>40001</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local2</name>
-        <hostname>localhost</hostname>
-        <port>40002</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local3</name>
-        <hostname>localhost</hostname>
-        <port>40003</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local4</name>
-        <hostname>localhost</hostname>
-        <port>40004</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local5</name>
-        <hostname>localhost</hostname>
-        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -860,8 +860,8 @@
     <created_user>kherbst</created_user>
     <created_date>2018/09/13 11:57:20.292</created_date>
     <modified_user>tmudzana</modified_user>
-    <modified_date>2018/09/25 09:08:43.486</modified_date>
-    <key_for_session_key/>
+    <modified_date>2022/06/13 15:09:16.212</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -895,6 +895,7 @@
         <length>128</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>Cause1</name>
@@ -906,6 +907,7 @@
         <length>50</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>Cause2</name>
@@ -917,6 +919,7 @@
         <length>50</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>Cause3</name>
@@ -928,6 +931,7 @@
         <length>50</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>Likelihood1</name>
@@ -939,6 +943,7 @@
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>Likelihood2</name>
@@ -950,6 +955,7 @@
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>Likelihood3</name>
@@ -961,6 +967,7 @@
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
     </fields>
     <data>
@@ -974,6 +981,7 @@
         <item/>
       </line>
     </data>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1003,6 +1011,7 @@
       <add_to_result_filenames>N</add_to_result_filenames>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
     </file>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1021,4 +1030,5 @@
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
+  <attributes/>
 </transformation>

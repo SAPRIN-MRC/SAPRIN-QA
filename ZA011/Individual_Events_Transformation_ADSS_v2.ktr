@@ -6,7 +6,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/public/iSHARE/ZA011</directory>
+    <directory>/SAPRIN-QA/ZA011</directory>
     <parameters>
     </parameters>
     <log>
@@ -424,8 +424,34 @@
     </partitionschemas>
     <slaveservers>
       <slaveserver>
+        <name>acs-etl01</name>
+        <hostname>acs-etl01</hostname>
+        <port>8080</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
         <name>ACS-ETL01 Carte</name>
         <hostname>ACS-ETL01</hostname>
+        <port>8081</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Carte</name>
+        <hostname>Pentaho.ahri.org</hostname>
         <port>8081</port>
         <webAppName/>
         <username>cluster</username>
@@ -450,9 +476,22 @@
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
-        <name>Carte</name>
-        <hostname>Pentaho.ahri.org</hostname>
-        <port>8081</port>
+        <name>cm-metricsapp01</name>
+        <hostname>cm-metricsapp01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb01</name>
+        <hostname>cm-metricsdb01</hostname>
+        <port>40000</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -460,6 +499,45 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb02</name>
+        <hostname>cm-metricsdb02</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb03</name>
+        <hostname>cm-metricsdb03</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsetl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -473,6 +551,19 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>etl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -492,6 +583,71 @@
         <name>ID-Server</name>
         <hostname>localhost</hostname>
         <port>8181</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local1</name>
+        <hostname>localhost</hostname>
+        <port>40001</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local2</name>
+        <hostname>localhost</hostname>
+        <port>40002</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local3</name>
+        <hostname>localhost</hostname>
+        <port>40003</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local4</name>
+        <hostname>localhost</hostname>
+        <port>40004</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local5</name>
+        <hostname>localhost</hostname>
+        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -570,162 +726,6 @@
         <name>Slave3</name>
         <hostname>localhost</hostname>
         <port>8084</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>acs-etl01</name>
-        <hostname>acs-etl01</hostname>
-        <port>8080</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsapp01</name>
-        <hostname>cm-metricsapp01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb01</name>
-        <hostname>cm-metricsdb01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb02</name>
-        <hostname>cm-metricsdb02</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb03</name>
-        <hostname>cm-metricsdb03</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsetl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>etl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local1</name>
-        <hostname>localhost</hostname>
-        <port>40001</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local2</name>
-        <hostname>localhost</hostname>
-        <port>40002</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local3</name>
-        <hostname>localhost</hostname>
-        <port>40003</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local4</name>
-        <hostname>localhost</hostname>
-        <port>40004</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local5</name>
-        <hostname>localhost</hostname>
-        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -860,12 +860,79 @@
     <created_user>-</created_user>
     <created_date>2013/01/21 07:36:01.524</created_date>
     <modified_user>kherbst</modified_user>
-    <modified_date>2018/10/11 09:16:17.865</modified_date>
-    <key_for_session_key/>
+    <modified_date>2022/06/21 05:54:40.992</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
+  <connection>
+    <name>ADSS_SAPRIN202206</name>
+    <server>SAPRIN</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>ADSS_SAPRIN202206</database>
+    <port>1433</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MSSQLNATIVE.encrypt</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MSSQLNATIVE.trustServerCertificate</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
   <order>
     <hop>
       <from>Sort Residence</from>
@@ -1002,6 +1069,7 @@
         <name>Id</name>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1010,8 +1078,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1363</xloc>
-      <yloc>310</yloc>
+      <xloc>1504</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1026,6 +1094,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>Tmp1</field_name>
       <calc_type>ADD</calc_type>
@@ -1041,6 +1110,7 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1049,8 +1119,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>582</xloc>
-      <yloc>168</yloc>
+      <xloc>720</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1065,6 +1135,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>Tmp1</field_name>
       <calc_type>ADD</calc_type>
@@ -1080,6 +1151,7 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1088,8 +1160,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1009</xloc>
-      <yloc>310</yloc>
+      <xloc>1152</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1119,6 +1191,7 @@
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1127,8 +1200,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>582</xloc>
-      <yloc>38</yloc>
+      <xloc>720</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1158,6 +1231,7 @@
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1166,8 +1240,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1009</xloc>
-      <yloc>524</yloc>
+      <xloc>1152</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1182,7 +1256,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Snapshot</connection>
+    <connection>ADSS_SAPRIN202206</connection>
     <sql>SELECT
   Residence
 , InternalMigration
@@ -1195,6 +1269,56 @@ FROM InMigrations
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>Residence</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input_Inmigration</origin>
+        <comments>Residence</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ZA</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Boolean</type>
+        <storagetype>normal</storagetype>
+        <name>InternalMigration</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>Input_Inmigration</origin>
+        <comments>InternalMigration</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ZA</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1203,8 +1327,8 @@ FROM InMigrations
       </output>
     </remotesteps>
     <GUI>
-      <xloc>358</xloc>
-      <yloc>524</yloc>
+      <xloc>496</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1219,7 +1343,7 @@ FROM InMigrations
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Snapshot</connection>
+    <connection>ADSS_SAPRIN202206</connection>
     <sql>SELECT
   Residence
 , InternalMigration
@@ -1232,6 +1356,56 @@ Order BY Residence ASC
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>Residence</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input_Outmigration</origin>
+        <comments>Residence</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ZA</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Boolean</type>
+        <storagetype>normal</storagetype>
+        <name>InternalMigration</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>Input_Outmigration</origin>
+        <comments>InternalMigration</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ZA</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1240,8 +1414,8 @@ Order BY Residence ASC
       </output>
     </remotesteps>
     <GUI>
-      <xloc>797</xloc>
-      <yloc>168</yloc>
+      <xloc>928</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1256,7 +1430,7 @@ Order BY Residence ASC
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Snapshot</connection>
+    <connection>ADSS_SAPRIN202206</connection>
     <sql>SELECT
   R.Residence
 , R.Location
@@ -1264,11 +1438,14 @@ Order BY Residence ASC
 , R.StartDate
 , R.InitiatingEventType
 , R.StartObservation
-,OS.ObservationDate AS StartObservationDate
-, R.EndDate
+, OS.ObservationDate AS StartObservationDate
+, CASE 
+    WHEN R.EndDate = '21001231' THEN OE.ObservationDate
+	ELSE R.EndDate
+  END EndDate
 , R.TerminatingEventType
 , R.LastObservation
-,OE.ObservationDate AS EndObservationDate
+, OE.ObservationDate AS EndObservationDate
 
 FROM Residences R
 JOIN Locations l ON l.Location=r.Location
@@ -1280,6 +1457,263 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>Residence</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>Residence</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>Location</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>Location</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>Id</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>Id</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>StartDate</name>
+        <length>3</length>
+        <precision>-1</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>StartDate</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>InitiatingEventType</name>
+        <length>1</length>
+        <precision>-1</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>InitiatingEventType</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>StartObservation</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>StartObservation</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>StartObservationDate</name>
+        <length>3</length>
+        <precision>-1</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>StartObservationDate</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>EndDate</name>
+        <length>3</length>
+        <precision>-1</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>EndDate</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TerminatingEventType</name>
+        <length>1</length>
+        <precision>-1</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>TerminatingEventType</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>LastObservation</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>LastObservation</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>EndObservationDate</name>
+        <length>3</length>
+        <precision>-1</precision>
+        <origin>Input_Residence_Table</origin>
+        <comments>EndObservationDate</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1288,8 +1722,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>69</xloc>
-      <yloc>168</yloc>
+      <xloc>96</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1345,6 +1779,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <target_value>OMG</target_value>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1353,8 +1788,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1009</xloc>
-      <yloc>168</yloc>
+      <xloc>1152</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1390,6 +1825,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <target_value>4</target_value>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1398,8 +1834,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1170</xloc>
-      <yloc>38</yloc>
+      <xloc>1312</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1455,6 +1891,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <target_value>IMG</target_value>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1463,8 +1900,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>582</xloc>
-      <yloc>310</yloc>
+      <xloc>720</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1488,6 +1925,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
     <keys_2>
       <key>Residence</key>
     </keys_2>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1496,8 +1934,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>358</xloc>
-      <yloc>168</yloc>
+      <xloc>496</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1521,6 +1959,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
     <keys_2>
       <key>Residence</key>
     </keys_2>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1529,8 +1968,38 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>797</xloc>
-      <yloc>524</yloc>
+      <xloc>928</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Output IndividualEvents</name>
+    <type>CubeOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_IndividualEvents.cube</name>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+    </file>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1504</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1571,6 +2040,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <storage_type/>
       </meta>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1579,8 +2049,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>358</xloc>
-      <yloc>310</yloc>
+      <xloc>496</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1671,6 +2141,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <storage_type/>
       </meta>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1679,8 +2150,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>358</xloc>
-      <yloc>38</yloc>
+      <xloc>496</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1721,6 +2192,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <storage_type/>
       </meta>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1729,8 +2201,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>797</xloc>
-      <yloc>310</yloc>
+      <xloc>928</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1775,6 +2247,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1783,8 +2256,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1009</xloc>
-      <yloc>38</yloc>
+      <xloc>1152</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1857,6 +2330,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <storage_type/>
       </meta>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1865,8 +2339,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1363</xloc>
-      <yloc>418</yloc>
+      <xloc>1504</xloc>
+      <yloc>416</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1914,6 +2388,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <presorted>N</presorted>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1922,8 +2397,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1363</xloc>
-      <yloc>38</yloc>
+      <xloc>1504</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1955,6 +2430,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <presorted>N</presorted>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1963,8 +2439,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>216</xloc>
-      <yloc>168</yloc>
+      <xloc>352</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1996,6 +2472,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <presorted>N</presorted>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2004,8 +2481,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>582</xloc>
-      <yloc>524</yloc>
+      <xloc>720</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2037,6 +2514,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <presorted>N</presorted>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2045,8 +2523,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>358</xloc>
-      <yloc>418</yloc>
+      <xloc>496</xloc>
+      <yloc>416</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2094,6 +2572,7 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
         <norm>ObservationDate</norm>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2102,37 +2581,8 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1363</xloc>
-      <yloc>168</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Output IndividualEvents</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_IndividualEvents.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1360</xloc>
-      <yloc>512</yloc>
+      <xloc>1504</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2141,4 +2591,5 @@ LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
+  <attributes/>
 </transformation>

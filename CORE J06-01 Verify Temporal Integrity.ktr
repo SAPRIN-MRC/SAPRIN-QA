@@ -6,7 +6,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/public/iSHARE</directory>
+    <directory>/SAPRIN-QA</directory>
     <parameters>
     </parameters>
     <log>
@@ -424,8 +424,34 @@
     </partitionschemas>
     <slaveservers>
       <slaveserver>
+        <name>acs-etl01</name>
+        <hostname>acs-etl01</hostname>
+        <port>8080</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
         <name>ACS-ETL01 Carte</name>
         <hostname>ACS-ETL01</hostname>
+        <port>8081</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Carte</name>
+        <hostname>Pentaho.ahri.org</hostname>
         <port>8081</port>
         <webAppName/>
         <username>cluster</username>
@@ -450,9 +476,22 @@
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
-        <name>Carte</name>
-        <hostname>Pentaho.ahri.org</hostname>
-        <port>8081</port>
+        <name>cm-metricsapp01</name>
+        <hostname>cm-metricsapp01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb01</name>
+        <hostname>cm-metricsdb01</hostname>
+        <port>40000</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -460,6 +499,45 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb02</name>
+        <hostname>cm-metricsdb02</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb03</name>
+        <hostname>cm-metricsdb03</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsetl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -473,6 +551,19 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>etl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -492,6 +583,71 @@
         <name>ID-Server</name>
         <hostname>localhost</hostname>
         <port>8181</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local1</name>
+        <hostname>localhost</hostname>
+        <port>40001</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local2</name>
+        <hostname>localhost</hostname>
+        <port>40002</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local3</name>
+        <hostname>localhost</hostname>
+        <port>40003</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local4</name>
+        <hostname>localhost</hostname>
+        <port>40004</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local5</name>
+        <hostname>localhost</hostname>
+        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -570,162 +726,6 @@
         <name>Slave3</name>
         <hostname>localhost</hostname>
         <port>8084</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>acs-etl01</name>
-        <hostname>acs-etl01</hostname>
-        <port>8080</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsapp01</name>
-        <hostname>cm-metricsapp01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb01</name>
-        <hostname>cm-metricsdb01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb02</name>
-        <hostname>cm-metricsdb02</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb03</name>
-        <hostname>cm-metricsdb03</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsetl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>etl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local1</name>
-        <hostname>localhost</hostname>
-        <port>40001</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local2</name>
-        <hostname>localhost</hostname>
-        <port>40002</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local3</name>
-        <hostname>localhost</hostname>
-        <port>40003</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local4</name>
-        <hostname>localhost</hostname>
-        <port>40004</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local5</name>
-        <hostname>localhost</hostname>
-        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -860,8 +860,8 @@
     <created_user>kherbst</created_user>
     <created_date>2018/09/13 11:55:35.357</created_date>
     <modified_user>tmudzana</modified_user>
-    <modified_date>2018/10/05 04:44:16.838</modified_date>
-    <key_for_session_key/>
+    <modified_date>2022/06/14 13:54:16.697</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -993,6 +993,7 @@
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1030,6 +1031,7 @@
         <valuefield>1</valuefield>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1054,6 +1056,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>Legal</field_name>
       <calc_type>SUBTRACT</calc_type>
@@ -1084,6 +1087,7 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1108,6 +1112,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1132,6 +1137,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1170,6 +1176,7 @@
         <trim_type>none</trim_type>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1215,6 +1222,7 @@
         <valuefield/>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1260,6 +1268,7 @@
         <valuefield/>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1305,6 +1314,7 @@
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1315,6 +1325,52 @@
     <GUI>
       <xloc>944</xloc>
       <yloc>59</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>If field value is null 2</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <replaceAllByValue/>
+    <replaceAllMask/>
+    <selectFields>Y</selectFields>
+    <selectValuesType>N</selectValuesType>
+    <setEmptyStringAll>N</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      <field>
+        <name>Events</name>
+        <value/>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>Violations</name>
+        <value/>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1168</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1351,6 +1407,7 @@
         </conditions>
       </condition>
     </compare>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1384,6 +1441,7 @@
     <keys_2>
       <key>CentreId</key>
     </keys_2>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1423,6 +1481,7 @@
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1455,6 +1514,7 @@
       <value_precision>-1</value_precision>
       <replace_field/>
     </formula>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1464,6 +1524,66 @@
     </remotesteps>
     <GUI>
       <xloc>1479</xloc>
+      <yloc>59</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S01 input</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S01.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>32</xloc>
+      <yloc>59</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S02_Violations</name>
+    <type>CubeOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S02_Violations.cube</name>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+    </file>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
       <yloc>59</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1559,6 +1679,7 @@
         <storage_type/>
       </meta>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1586,7 +1707,6 @@
     <header>Y</header>
     <footer>N</footer>
     <makeSheetActive>Y</makeSheetActive>
-    <rowWritingMethod>push</rowWritingMethod>
     <startingCell>A1</startingCell>
     <appendOmitHeader>N</appendOmitHeader>
     <appendOffset>0</appendOffset>
@@ -1720,6 +1840,7 @@
         <hyperlinkField/>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1729,64 +1850,6 @@
     </remotesteps>
     <GUI>
       <xloc>1856</xloc>
-      <yloc>59</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S01 input</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S01.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>32</xloc>
-      <yloc>59</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S02_Violations</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S02_Violations.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>688</xloc>
       <yloc>59</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1805,7 +1868,6 @@
     <header>N</header>
     <footer>N</footer>
     <makeSheetActive>Y</makeSheetActive>
-    <rowWritingMethod>overwrite</rowWritingMethod>
     <startingCell>AA${MetricOutputRow}</startingCell>
     <appendOmitHeader>N</appendOmitHeader>
     <appendOffset>0</appendOffset>
@@ -1879,6 +1941,7 @@
         <hyperlinkField/>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1892,54 +1955,10 @@
       <draw>Y</draw>
     </GUI>
   </step>
-  <step>
-    <name>If field value is null 2</name>
-    <type>IfNull</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <replaceAllByValue/>
-    <replaceAllMask/>
-    <selectFields>Y</selectFields>
-    <selectValuesType>N</selectValuesType>
-    <setEmptyStringAll>N</setEmptyStringAll>
-    <valuetypes>
-      </valuetypes>
-    <fields>
-      <field>
-        <name>Events</name>
-        <value/>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>Violations</name>
-        <value/>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1168</xloc>
-      <yloc>48</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
   <step_error_handling>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
+  <attributes/>
 </transformation>

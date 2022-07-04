@@ -6,7 +6,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/public/iSHARE</directory>
+    <directory>/SAPRIN-QA</directory>
     <parameters>
     </parameters>
     <log>
@@ -424,8 +424,34 @@
     </partitionschemas>
     <slaveservers>
       <slaveserver>
+        <name>acs-etl01</name>
+        <hostname>acs-etl01</hostname>
+        <port>8080</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
         <name>ACS-ETL01 Carte</name>
         <hostname>ACS-ETL01</hostname>
+        <port>8081</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Carte</name>
+        <hostname>Pentaho.ahri.org</hostname>
         <port>8081</port>
         <webAppName/>
         <username>cluster</username>
@@ -450,9 +476,22 @@
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
-        <name>Carte</name>
-        <hostname>Pentaho.ahri.org</hostname>
-        <port>8081</port>
+        <name>cm-metricsapp01</name>
+        <hostname>cm-metricsapp01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb01</name>
+        <hostname>cm-metricsdb01</hostname>
+        <port>40000</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -460,6 +499,45 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb02</name>
+        <hostname>cm-metricsdb02</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb03</name>
+        <hostname>cm-metricsdb03</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsetl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -473,6 +551,19 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>etl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -492,6 +583,71 @@
         <name>ID-Server</name>
         <hostname>localhost</hostname>
         <port>8181</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local1</name>
+        <hostname>localhost</hostname>
+        <port>40001</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local2</name>
+        <hostname>localhost</hostname>
+        <port>40002</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local3</name>
+        <hostname>localhost</hostname>
+        <port>40003</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local4</name>
+        <hostname>localhost</hostname>
+        <port>40004</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local5</name>
+        <hostname>localhost</hostname>
+        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -570,162 +726,6 @@
         <name>Slave3</name>
         <hostname>localhost</hostname>
         <port>8084</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>acs-etl01</name>
-        <hostname>acs-etl01</hostname>
-        <port>8080</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsapp01</name>
-        <hostname>cm-metricsapp01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb01</name>
-        <hostname>cm-metricsdb01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb02</name>
-        <hostname>cm-metricsdb02</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb03</name>
-        <hostname>cm-metricsdb03</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsetl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>etl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local1</name>
-        <hostname>localhost</hostname>
-        <port>40001</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local2</name>
-        <hostname>localhost</hostname>
-        <port>40002</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local3</name>
-        <hostname>localhost</hostname>
-        <port>40003</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local4</name>
-        <hostname>localhost</hostname>
-        <port>40004</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local5</name>
-        <hostname>localhost</hostname>
-        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -860,11 +860,32 @@
     <created_user>kherbst</created_user>
     <created_date>2018/09/13 11:55:46.466</created_date>
     <modified_user>kherbst</modified_user>
-    <modified_date>2018/09/16 13:37:23.196</modified_date>
-    <key_for_session_key/>
+    <modified_date>2022/06/21 07:56:06.066</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>Update this with number of years to generate</note>
+      <xloc>0</xloc>
+      <yloc>160</yloc>
+      <width>371</width>
+      <heigth>34</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <order>
     <hop>
@@ -1059,6 +1080,137 @@
     </hop>
   </order>
   <step>
+    <name>AgeGroup</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <formula>
+      <field_name>AgeGroup1</field_name>
+      <formula_string>IF(OR([AgeGroup]=1;[AgeGroup]=2);0;([AgeGroup]-3)*5)</formula_string>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field>AgeGroup</replace_field>
+    </formula>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>352</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>AgeGroup 2</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <formula>
+      <field_name>AgeGroup1</field_name>
+      <formula_string>IF(OR([AgeGroup]=1;[AgeGroup]=2);0;([AgeGroup]-3)*5)</formula_string>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field>AgeGroup</replace_field>
+    </formula>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Births</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Sex CalendarYear</send_true_to>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <conditions>
+          <condition>
+            <negated>N</negated>
+            <leftvalue>Sex</leftvalue>
+            <function>&gt;</function>
+            <rightvalue/>
+            <value>
+              <name>constant</name>
+              <type>Integer</type>
+              <text>0</text>
+              <length>-1</length>
+              <precision>0</precision>
+              <isnull>N</isnull>
+              <mask>####0;-####0</mask>
+            </value>
+          </condition>
+          <condition>
+            <negated>N</negated>
+            <operator>AND</operator>
+            <leftvalue>EventCode</leftvalue>
+            <function>=</function>
+            <rightvalue/>
+            <value>
+              <name>constant</name>
+              <type>String</type>
+              <text>BTH</text>
+              <length>-1</length>
+              <precision>-1</precision>
+              <isnull>N</isnull>
+              <mask/>
+            </value>
+          </condition>
+        </conditions>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Calculate PersonYears</name>
     <type>Calculator</type>
     <description/>
@@ -1069,6 +1221,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>YearDay</field_name>
       <calc_type>CONSTANT</calc_type>
@@ -1399,6 +1552,7 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1423,6 +1577,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>CalendarYear</field_name>
       <calc_type>ADD</calc_type>
@@ -1438,6 +1593,7 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1462,6 +1618,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>YearDays</field_name>
       <calc_type>CONSTANT</calc_type>
@@ -1507,6 +1664,7 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1538,6 +1696,7 @@
     <nrclonefield>NumYears</nrclonefield>
     <addclonenum>Y</addclonenum>
     <clonenumfield>CloneNum</clonenumfield>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1552,6 +1711,120 @@
     </GUI>
   </step>
   <step>
+    <name>Count Births</name>
+    <type>GroupBy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore/>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname/>
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>Sex</name>
+      </field>
+      <field>
+        <name>CalendarYear</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>Births</aggregate>
+        <subject/>
+        <type>COUNT_ANY</type>
+        <valuefield/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Deaths</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>AgeGroup</send_true_to>
+    <send_false_to>Ignore</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <conditions>
+          <condition>
+            <negated>N</negated>
+            <leftvalue>Sex</leftvalue>
+            <function>&gt;</function>
+            <rightvalue/>
+            <value>
+              <name>constant</name>
+              <type>Integer</type>
+              <text>0</text>
+              <length>-1</length>
+              <precision>0</precision>
+              <isnull>N</isnull>
+              <mask>####0;-####0</mask>
+            </value>
+          </condition>
+          <condition>
+            <negated>N</negated>
+            <operator>AND</operator>
+            <leftvalue>NextEvent</leftvalue>
+            <function>=</function>
+            <rightvalue/>
+            <value>
+              <name>constant</name>
+              <type>String</type>
+              <text>DTH</text>
+              <length>-1</length>
+              <precision>-1</precision>
+              <isnull>N</isnull>
+              <mask/>
+            </value>
+          </condition>
+        </conditions>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Dummy (do nothing)</name>
     <type>Dummy</type>
     <description/>
@@ -1562,6 +1835,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1600,6 +1874,7 @@
         <trim_type>none</trim_type>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1657,6 +1932,7 @@
         <valuefield/>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1667,6 +1943,147 @@
     <GUI>
       <xloc>832</xloc>
       <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ignore</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>IndividualId Sex AgeGroup</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size/>
+    <free_memory>20</free_memory>
+    <compress>Y</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>IndividualId</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Sex</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>AgeGroup</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>IndividualId Sex AgeGroup 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size/>
+    <free_memory>20</free_memory>
+    <compress>Y</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>IndividualId</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Sex</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>AgeGroup</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1693,6 +2110,7 @@
         <rightvalue/>
       </condition>
     </compare>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1728,6 +2146,7 @@
       <key>Sex</key>
       <key>CalendarYear</key>
     </keys_2>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1765,6 +2184,7 @@
       <key>Sex</key>
       <key>AgeGroup</key>
     </keys_2>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1800,6 +2220,7 @@
       <key>Sex</key>
       <key>CalendarYear</key>
     </keys_2>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1835,6 +2256,7 @@
       <key>Sex</key>
       <key>CalendarYear</key>
     </keys_2>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1862,7 +2284,6 @@
     <header>Y</header>
     <footer>N</footer>
     <makeSheetActive>Y</makeSheetActive>
-    <rowWritingMethod>overwrite</rowWritingMethod>
     <startingCell>A1</startingCell>
     <appendOmitHeader>N</appendOmitHeader>
     <appendOffset>0</appendOffset>
@@ -2656,6 +3077,7 @@
         <hyperlinkField/>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2957,6 +3379,7 @@
         <target_aggregation_type>-</target_aggregation_type>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2967,6 +3390,126 @@
     <GUI>
       <xloc>1152</xloc>
       <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S04</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S04 2</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S04 3</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S05</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S05.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3047,6 +3590,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3086,6 +3630,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3245,6 +3790,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3461,6 +4007,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3614,6 +4161,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3624,6 +4172,144 @@
     <GUI>
       <xloc>752</xloc>
       <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Serialize Females to file</name>
+    <type>CubeOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\Indicators\${SiteCode}.${DataSetIdentifier}.v${CurrentVersion}_Female.cube</name>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+    </file>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2064</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sex CalendarYear</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size/>
+    <free_memory>20</free_memory>
+    <compress>Y</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Sex</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>CalendarYear</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sex CalendarYear AgeGroup</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size/>
+    <free_memory>20</free_memory>
+    <compress>Y</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Sex</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>CalendarYear</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>AgeGroup</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>672</xloc>
+      <yloc>480</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3663,6 +4349,7 @@
         <presorted>N</presorted>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3712,6 +4399,7 @@
         <presorted>N</presorted>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3721,63 +4409,6 @@
     </remotesteps>
     <GUI>
       <xloc>1632</xloc>
-      <yloc>480</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sex CalendarYear AgeGroup</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size/>
-    <free_memory>20</free_memory>
-    <compress>Y</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>Sex</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>CalendarYear</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>AgeGroup</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>672</xloc>
       <yloc>480</yloc>
       <draw>Y</draw>
     </GUI>
@@ -3804,6 +4435,7 @@
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>FromYear</name>
@@ -3815,6 +4447,7 @@
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>NumYears</name>
@@ -3826,20 +4459,22 @@
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
     </fields>
     <data>
       <line>
         <item>1</item>
         <item>1990</item>
-        <item>30</item>
+        <item>34</item>
       </line>
       <line>
         <item>2</item>
         <item>1990</item>
-        <item>30</item>
+        <item>34</item>
       </line>
     </data>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3881,6 +4516,7 @@
         <target_step>Serialize Females to file</target_step>
       </case>
     </cases>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -4028,6 +4664,7 @@
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -4041,581 +4678,10 @@
       <draw>Y</draw>
     </GUI>
   </step>
-  <step>
-    <name>S04</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Births</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Sex CalendarYear</send_true_to>
-    <send_false_to/>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <conditions>
-          <condition>
-            <negated>N</negated>
-            <leftvalue>Sex</leftvalue>
-            <function>&gt;</function>
-            <rightvalue/>
-            <value>
-              <name>constant</name>
-              <type>Integer</type>
-              <text>0</text>
-              <length>-1</length>
-              <precision>0</precision>
-              <isnull>N</isnull>
-              <mask>####0;-####0</mask>
-            </value>
-          </condition>
-          <condition>
-            <negated>N</negated>
-            <operator>AND</operator>
-            <leftvalue>EventCode</leftvalue>
-            <function>=</function>
-            <rightvalue/>
-            <value>
-              <name>constant</name>
-              <type>String</type>
-              <text>BTH</text>
-              <length>-1</length>
-              <precision>-1</precision>
-              <isnull>N</isnull>
-              <mask/>
-            </value>
-          </condition>
-        </conditions>
-      </condition>
-    </compare>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>400</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S05</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S05.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>320</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sex CalendarYear</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size/>
-    <free_memory>20</free_memory>
-    <compress>Y</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>Sex</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>CalendarYear</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>576</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Count Births</name>
-    <type>GroupBy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <all_rows>N</all_rows>
-    <ignore_aggregate>N</ignore_aggregate>
-    <field_ignore/>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>grp</prefix>
-    <add_linenr>N</add_linenr>
-    <linenr_fieldname/>
-    <give_back_row>N</give_back_row>
-    <group>
-      <field>
-        <name>Sex</name>
-      </field>
-      <field>
-        <name>CalendarYear</name>
-      </field>
-    </group>
-    <fields>
-      <field>
-        <aggregate>Births</aggregate>
-        <subject/>
-        <type>COUNT_ANY</type>
-        <valuefield/>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>752</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S04 2</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>128</xloc>
-      <yloc>384</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Deaths</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>AgeGroup</send_true_to>
-    <send_false_to>Ignore</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <conditions>
-          <condition>
-            <negated>N</negated>
-            <leftvalue>Sex</leftvalue>
-            <function>&gt;</function>
-            <rightvalue/>
-            <value>
-              <name>constant</name>
-              <type>Integer</type>
-              <text>0</text>
-              <length>-1</length>
-              <precision>0</precision>
-              <isnull>N</isnull>
-              <mask>####0;-####0</mask>
-            </value>
-          </condition>
-          <condition>
-            <negated>N</negated>
-            <operator>AND</operator>
-            <leftvalue>NextEvent</leftvalue>
-            <function>=</function>
-            <rightvalue/>
-            <value>
-              <name>constant</name>
-              <type>String</type>
-              <text>DTH</text>
-              <length>-1</length>
-              <precision>-1</precision>
-              <isnull>N</isnull>
-              <mask/>
-            </value>
-          </condition>
-        </conditions>
-      </condition>
-    </compare>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>384</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Ignore</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>480</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>AgeGroup</name>
-    <type>Formula</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <formula>
-      <field_name>AgeGroup1</field_name>
-      <formula_string>IF(OR([AgeGroup]=1;[AgeGroup]=2);0;([AgeGroup]-3)*5)</formula_string>
-      <value_type>Integer</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <replace_field>AgeGroup</replace_field>
-    </formula>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>352</xloc>
-      <yloc>384</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>IndividualId Sex AgeGroup</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size/>
-    <free_memory>20</free_memory>
-    <compress>Y</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>IndividualId</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>Sex</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>AgeGroup</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>512</xloc>
-      <yloc>384</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S04 3</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>128</xloc>
-      <yloc>592</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>AgeGroup 2</name>
-    <type>Formula</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <formula>
-      <field_name>AgeGroup1</field_name>
-      <formula_string>IF(OR([AgeGroup]=1;[AgeGroup]=2);0;([AgeGroup]-3)*5)</formula_string>
-      <value_type>Integer</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <replace_field>AgeGroup</replace_field>
-    </formula>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>592</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>IndividualId Sex AgeGroup 2</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size/>
-    <free_memory>20</free_memory>
-    <compress>Y</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>IndividualId</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>Sex</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>AgeGroup</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>512</xloc>
-      <yloc>592</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Serialize Females to file</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\Indicators\${SiteCode}.${DataSetIdentifier}.v${CurrentVersion}_Female.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2064</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
   <step_error_handling>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
+  <attributes/>
 </transformation>

@@ -4,76 +4,43 @@
   <extended_description/>
   <job_version/>
   <job_status>0</job_status>
-  <directory>/public/iSHARE</directory>
+  <directory>/SAPRIN-QA</directory>
   <created_user>-</created_user>
   <created_date>2013/09/20 13:03:45.579</created_date>
-  <modified_user>-</modified_user>
-  <modified_date>2014/06/09 19:11:32.851</modified_date>
+  <modified_user>kherbst</modified_user>
+  <modified_date>2022/06/21 12:46:46.811</modified_date>
   <parameters>
     </parameters>
-  <connection>
-    <name>Staging</name>
-    <server>ZA011-DB</server>
-    <type>MSSQLNATIVE</type>
-    <access>Native</access>
-    <database>ETLStaging</database>
-    <port>1433</port>
-    <username>kherbst</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79b875cc81bac9</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>MSSQLUseIntegratedSecurity</code>
-        <attribute>true</attribute>
-      </attribute>
-      <attribute>
-        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>1433</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
   <slaveservers>
+    <slaveserver>
+      <name>acs-etl01</name>
+      <hostname>acs-etl01</hostname>
+      <port>8080</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
     <slaveserver>
       <name>ACS-ETL01 Carte</name>
       <hostname>ACS-ETL01</hostname>
+      <port>8081</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>Carte</name>
+      <hostname>Pentaho.ahri.org</hostname>
       <port>8081</port>
       <webAppName/>
       <username>cluster</username>
@@ -98,9 +65,22 @@
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
-      <name>Carte</name>
-      <hostname>Pentaho.ahri.org</hostname>
-      <port>8081</port>
+      <name>cm-metricsapp01</name>
+      <hostname>cm-metricsapp01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb01</name>
+      <hostname>cm-metricsdb01</hostname>
+      <port>40000</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -108,6 +88,45 @@
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb02</name>
+      <hostname>cm-metricsdb02</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb03</name>
+      <hostname>cm-metricsdb03</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsetl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -121,6 +140,19 @@
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>etl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -140,6 +172,71 @@
       <name>ID-Server</name>
       <hostname>localhost</hostname>
       <port>8181</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local1</name>
+      <hostname>localhost</hostname>
+      <port>40001</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local2</name>
+      <hostname>localhost</hostname>
+      <port>40002</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local3</name>
+      <hostname>localhost</hostname>
+      <port>40003</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local4</name>
+      <hostname>localhost</hostname>
+      <port>40004</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local5</name>
+      <hostname>localhost</hostname>
+      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -218,162 +315,6 @@
       <name>Slave3</name>
       <hostname>localhost</hostname>
       <port>8084</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>acs-etl01</name>
-      <hostname>acs-etl01</hostname>
-      <port>8080</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsapp01</name>
-      <hostname>cm-metricsapp01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb01</name>
-      <hostname>cm-metricsdb01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb02</name>
-      <hostname>cm-metricsdb02</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb03</name>
-      <hostname>cm-metricsdb03</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsetl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>etl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local1</name>
-      <hostname>localhost</hostname>
-      <port>40001</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local2</name>
-      <hostname>localhost</hostname>
-      <port>40002</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local3</name>
-      <hostname>localhost</hostname>
-      <port>40003</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local4</name>
-      <hostname>localhost</hostname>
-      <port>40004</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local5</name>
-      <hostname>localhost</hostname>
-      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -710,47 +651,10 @@
   <shared_objects_file/>
   <entries>
     <entry>
-      <name>Create IndividualEvents Staging table</name>
-      <description/>
-      <type>SQL</type>
-      <sql>CREATE TABLE ${SiteCode}_IndividualEvents
-(
-  IndividualId VARCHAR(128)
-, EventCode VARCHAR(3)
-, EventDate DATETIME
-, EventNr int
-, ObservationDate DATETIME
-, LocationId VARCHAR(128)
-)
-;</sql>
-      <useVariableSubstitution>T</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>530</xloc>
-      <yloc>46</yloc>
-    </entry>
-    <entry>
-      <name>IndividualEvents exists</name>
-      <description/>
-      <type>TABLE_EXISTS</type>
-      <tablename>${SiteCode}_IndividualEvents</tablename>
-      <schemaname/>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>217</xloc>
-      <yloc>46</yloc>
-    </entry>
-    <entry>
       <name>START</name>
       <description/>
       <type>SPECIAL</type>
+      <attributes/>
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -766,161 +670,18 @@
       <nr>0</nr>
       <xloc>63</xloc>
       <yloc>46</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
-      <name>Create Individuals Staging table</name>
-      <description/>
-      <type>SQL</type>
-      <sql>CREATE TABLE ${SiteCode}_Individuals
-(
-  IndividualId VARCHAR(128)
-, Sex int
-, DoB DATETIME
-)
-;</sql>
-      <useVariableSubstitution>T</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>530</xloc>
-      <yloc>143</yloc>
-    </entry>
-    <entry>
-      <name>Individuals exists</name>
-      <description/>
-      <type>TABLE_EXISTS</type>
-      <tablename>${SiteCode}_Individuals</tablename>
-      <schemaname/>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>217</xloc>
-      <yloc>143</yloc>
-    </entry>
-    <entry>
-      <name>Create Deliveries Table</name>
-      <description/>
-      <type>SQL</type>
-      <sql>CREATE TABLE ${SiteCode}_Deliveries
-(
-  MotherId VARCHAR(128)
-, DeliveryDate DATETIME
-, LiveBorn INT
-, DeliveryId INT
-)
-;</sql>
-      <useVariableSubstitution>T</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>530</xloc>
-      <yloc>240</yloc>
-    </entry>
-    <entry>
-      <name>Create Delivery Info Table</name>
-      <description/>
-      <type>SQL</type>
-      <sql>CREATE TABLE ${SiteCode}_ChildDeliveryInfo
-(
-  ChildId VARCHAR(128)
-, MotherId VARCHAR(128)
-, DeliveryId INT
-)
-;</sql>
-      <useVariableSubstitution>T</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>530</xloc>
-      <yloc>337</yloc>
-    </entry>
-    <entry>
-      <name>Deliveries table exists</name>
-      <description/>
-      <type>TABLE_EXISTS</type>
-      <tablename>${SiteCode}_Deliveries</tablename>
-      <schemaname/>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>217</xloc>
-      <yloc>240</yloc>
-    </entry>
-    <entry>
-      <name>Child Delivery Info exists</name>
-      <description/>
-      <type>TABLE_EXISTS</type>
-      <tablename>${SiteCode}_ChildDeliveryInfo</tablename>
-      <schemaname/>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>217</xloc>
-      <yloc>337</yloc>
-    </entry>
-    <entry>
-      <name>Create Deaths Table</name>
-      <description/>
-      <type>SQL</type>
-      <sql>CREATE TABLE ${SiteCode}_Deaths
-(
-  IndividualId VARCHAR(128)
-, Cause1 VARCHAR(50)
-, Cause2 VARCHAR(50)
-, Cause3 VARCHAR(50)
-, Likelihood1 INT
-, Likelihood2 INT
-, Likelihood3 INT
-)
-;</sql>
-      <useVariableSubstitution>T</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>530</xloc>
-      <yloc>434</yloc>
-    </entry>
-    <entry>
-      <name>Deaths table exists</name>
-      <description/>
-      <type>TABLE_EXISTS</type>
-      <tablename>${SiteCode}_Deaths</tablename>
-      <schemaname/>
-      <connection>Staging</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>217</xloc>
-      <yloc>434</yloc>
-    </entry>
-    <entry>
-      <name>CORE J00-B01u Create Individual Events Table - Updated</name>
+      <name>CORE J00-B01 Prepare Core Events v2</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
-      <transname>CORE J00-B01u Create Individual Events Table - Updated</transname>
-      <directory>/public/VN021</directory>
+      <transname>CORE J00-B01 Prepare Core Events v2</transname>
+      <directory>/SAPRIN-QA/${SiteCode}</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -939,25 +700,28 @@
       <follow_abort_remote>N</follow_abort_remote>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
-      <run_configuration/>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>214</xloc>
-      <yloc>535</yloc>
+      <xloc>240</xloc>
+      <yloc>46</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J00-B02 Create Individual Table</name>
+      <name>CORE J00-B02 Prepare Core Individuals</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
-      <transname>CORE J00-B02 Create Individual Table</transname>
-      <directory>/public/VN021</directory>
+      <transname>CORE J00-B02 Prepare Core Individuals</transname>
+      <directory>/SAPRIN-QA/${SiteCode}</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -976,25 +740,28 @@
       <follow_abort_remote>N</follow_abort_remote>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
-      <run_configuration/>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>214</xloc>
-      <yloc>630</yloc>
+      <xloc>608</xloc>
+      <yloc>48</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J00-B03 Child Delivery Info</name>
+      <name>CORE J00-B03 Prepare Delivery Events</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
-      <transname>CORE J00-B03 Child Delivery Info</transname>
-      <directory>/public/VN021</directory>
+      <transname>CORE J00-B03 Prepare Delivery Events</transname>
+      <directory>/SAPRIN-QA/${SiteCode}</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -1013,25 +780,28 @@
       <follow_abort_remote>N</follow_abort_remote>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
-      <run_configuration/>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>527</xloc>
-      <yloc>630</yloc>
+      <xloc>240</xloc>
+      <yloc>160</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J00-B05 Create Deaths Table</name>
+      <name>CORE J00-B04 Stage Deaths</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
-      <transname>CORE J00-B05 Create Deaths Table</transname>
-      <directory>/public/VN021</directory>
+      <transname>CORE J00-B04 Stage Deaths</transname>
+      <directory>/SAPRIN-QA/${SiteCode}</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -1050,77 +820,35 @@
       <follow_abort_remote>N</follow_abort_remote>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
-      <run_configuration/>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>527</xloc>
-      <yloc>727</yloc>
+      <xloc>608</xloc>
+      <yloc>160</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Success</name>
       <description/>
       <type>SUCCESS</type>
+      <attributes/>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>214</xloc>
-      <yloc>824</yloc>
-    </entry>
-    <entry>
-      <name>CORE J00-B04 Deliveries</name>
-      <description/>
-      <type>TRANS</type>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
-      <filename/>
-      <transname>CORE J00-B04 Deliveries</transname>
-      <directory>/public/VN021</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration/>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>214</xloc>
-      <yloc>727</yloc>
+      <xloc>768</xloc>
+      <yloc>160</yloc>
+      <attributes_kjc/>
     </entry>
   </entries>
   <hops>
     <hop>
-      <from>START</from>
-      <to>IndividualEvents exists</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
-    <hop>
-      <from>IndividualEvents exists</from>
-      <to>Individuals exists</to>
+      <from>CORE J00-B01 Prepare Core Events v2</from>
+      <to>CORE J00-B02 Prepare Core Individuals</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1128,17 +856,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>IndividualEvents exists</from>
-      <to>Create IndividualEvents Staging table</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Create IndividualEvents Staging table</from>
-      <to>Individuals exists</to>
+      <from>CORE J00-B02 Prepare Core Individuals</from>
+      <to>CORE J00-B03 Prepare Delivery Events</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1146,8 +865,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Individuals exists</from>
-      <to>Deliveries table exists</to>
+      <from>CORE J00-B03 Prepare Delivery Events</from>
+      <to>CORE J00-B04 Stage Deaths</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1155,106 +874,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Individuals exists</from>
-      <to>Create Individuals Staging table</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Create Individuals Staging table</from>
-      <to>Deliveries table exists</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Deliveries table exists</from>
-      <to>Child Delivery Info exists</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Deliveries table exists</from>
-      <to>Create Deliveries Table</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Create Deliveries Table</from>
-      <to>Child Delivery Info exists</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Child Delivery Info exists</from>
-      <to>Deaths table exists</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Child Delivery Info exists</from>
-      <to>Create Delivery Info Table</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Create Delivery Info Table</from>
-      <to>Deaths table exists</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Deaths table exists</from>
-      <to>Create Deaths Table</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J00-B01u Create Individual Events Table - Updated</from>
-      <to>CORE J00-B02 Create Individual Table</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J00-B02 Create Individual Table</from>
-      <to>CORE J00-B03 Child Delivery Info</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J00-B05 Create Deaths Table</from>
+      <from>CORE J00-B04 Stage Deaths</from>
       <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -1263,42 +883,27 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>CORE J00-B03 Child Delivery Info</from>
-      <to>CORE J00-B04 Deliveries</to>
+      <from>START</from>
+      <to>CORE J00-B01 Prepare Core Events v2</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J00-B04 Deliveries</from>
-      <to>CORE J00-B05 Create Deaths Table</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Create Deaths Table</from>
-      <to>CORE J00-B01u Create Individual Events Table - Updated</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Deaths table exists</from>
-      <to>CORE J00-B01u Create Individual Events Table - Updated</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
+      <unconditional>Y</unconditional>
     </hop>
   </hops>
   <notepads>
   </notepads>
+  <attributes>
+    <group>
+      <name>METASTORE.pentaho</name>
+      <attribute>
+        <key>Default Run Configuration</key>
+        <value>{"namespace":"pentaho","id":"Default Run Configuration","name":"Default Run Configuration","description":"Defines a default run configuration","metaStoreName":null}</value>
+      </attribute>
+    </group>
+    <group>
+      <name>{"_":"Embedded MetaStore Elements","namespace":"pentaho","type":"Default Run Configuration"}</name>
+    </group>
+  </attributes>
 </job>

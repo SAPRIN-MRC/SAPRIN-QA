@@ -13,11 +13,11 @@ OBE happens at 00h00
 CYR happens at 00h00 (CYR - calendar year changes)
 BDY happens at 06h00 (Birth day)
 
-EXT-&gt;ENT &lt;= 180 days - Set EXT to ENT date
-EXT-&gt;ENT &gt;  180 days - Set EXT=OMG and ENT=IMG 
+EXT->ENT &lt;= 180 days - Set EXT to ENT date
+EXT->ENT >  180 days - Set EXT=OMG and ENT=IMG 
 
-OMG-&gt;ENT &lt;= 180 days - Set intervening period as resident - done later
-OMG-&gt;ENT &gt;  180 days - Set intervening period as non-resident - done later
+OMG->ENT &lt;= 180 days - Set intervening period as resident - done later
+OMG->ENT >  180 days - Set intervening period as non-resident - done later
 
 ENT as a first event (clearly a reconciliation issue)
 
@@ -26,17 +26,43 @@ ENT as a first event (clearly a reconciliation issue)
 OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
   <job_version/>
   <job_status>0</job_status>
-  <directory>/public/iSHARE</directory>
+  <directory>/SAPRIN-QA</directory>
   <created_user>-</created_user>
   <created_date>2013/05/15 17:31:48.371</created_date>
   <modified_user>tmudzana</modified_user>
-  <modified_date>2019/01/22 22:25:27.732</modified_date>
+  <modified_date>2022/06/14 13:59:19.847</modified_date>
   <parameters>
     </parameters>
   <slaveservers>
     <slaveserver>
+      <name>acs-etl01</name>
+      <hostname>acs-etl01</hostname>
+      <port>8080</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
       <name>ACS-ETL01 Carte</name>
       <hostname>ACS-ETL01</hostname>
+      <port>8081</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>Carte</name>
+      <hostname>Pentaho.ahri.org</hostname>
       <port>8081</port>
       <webAppName/>
       <username>cluster</username>
@@ -61,9 +87,22 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
-      <name>Carte</name>
-      <hostname>Pentaho.ahri.org</hostname>
-      <port>8081</port>
+      <name>cm-metricsapp01</name>
+      <hostname>cm-metricsapp01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb01</name>
+      <hostname>cm-metricsdb01</hostname>
+      <port>40000</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -71,6 +110,45 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb02</name>
+      <hostname>cm-metricsdb02</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb03</name>
+      <hostname>cm-metricsdb03</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsetl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -84,6 +162,19 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>etl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -103,6 +194,71 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <name>ID-Server</name>
       <hostname>localhost</hostname>
       <port>8181</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local1</name>
+      <hostname>localhost</hostname>
+      <port>40001</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local2</name>
+      <hostname>localhost</hostname>
+      <port>40002</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local3</name>
+      <hostname>localhost</hostname>
+      <port>40003</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local4</name>
+      <hostname>localhost</hostname>
+      <port>40004</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local5</name>
+      <hostname>localhost</hostname>
+      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -181,162 +337,6 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <name>Slave3</name>
       <hostname>localhost</hostname>
       <port>8084</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>acs-etl01</name>
-      <hostname>acs-etl01</hostname>
-      <port>8080</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsapp01</name>
-      <hostname>cm-metricsapp01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb01</name>
-      <hostname>cm-metricsdb01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb02</name>
-      <hostname>cm-metricsdb02</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb03</name>
-      <hostname>cm-metricsdb03</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsetl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>etl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local1</name>
-      <hostname>localhost</hostname>
-      <port>40001</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local2</name>
-      <hostname>localhost</hostname>
-      <port>40002</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local3</name>
-      <hostname>localhost</hostname>
-      <port>40003</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local4</name>
-      <hostname>localhost</hostname>
-      <port>40004</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local5</name>
-      <hostname>localhost</hostname>
-      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -676,6 +676,7 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <name>START</name>
       <description/>
       <type>SPECIAL</type>
+      <attributes/>
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -691,16 +692,18 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <nr>0</nr>
       <xloc>64</xloc>
       <yloc>96</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J07-03 Consolidate EXT-ENT pairs</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J07-03 Consolidate EXT-ENT pairs</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -720,6 +723,7 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -728,16 +732,18 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <nr>0</nr>
       <xloc>240</xloc>
       <yloc>192</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J07-04 Recode EXT events to OMG</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J07-04 Recode EXT events to OMG</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -757,6 +763,7 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -765,16 +772,18 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <nr>0</nr>
       <xloc>768</xloc>
       <yloc>192</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J07-01 Consolidate OMG-IMG pairs</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J07-01 Consolidate OMG-IMG pairs</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -794,6 +803,7 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -802,16 +812,18 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <nr>0</nr>
       <xloc>240</xloc>
       <yloc>96</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J07-02 Recode OMG events to EXT</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J07-02 Recode OMG events to EXT</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -831,6 +843,7 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -839,26 +852,30 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <nr>0</nr>
       <xloc>768</xloc>
       <yloc>96</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Success</name>
       <description/>
       <type>SUCCESS</type>
+      <attributes/>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>768</xloc>
       <yloc>320</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J07-05 Set Event Times</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J07-05 Set Event Times</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -878,6 +895,7 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -886,11 +904,13 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <nr>0</nr>
       <xloc>240</xloc>
       <yloc>320</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>S03_Temp</name>
       <description/>
       <type>DELETE_FILE</type>
+      <attributes/>
       <filename>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S03_Temp.cube</filename>
       <fail_if_file_not_exists>N</fail_if_file_not_exists>
       <parallel>N</parallel>
@@ -898,11 +918,13 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <nr>0</nr>
       <xloc>416</xloc>
       <yloc>320</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>S03_Temp2</name>
       <description/>
       <type>DELETE_FILE</type>
+      <attributes/>
       <filename>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S03_Temp2.cube</filename>
       <fail_if_file_not_exists>N</fail_if_file_not_exists>
       <parallel>N</parallel>
@@ -910,6 +932,7 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
       <nr>0</nr>
       <xloc>592</xloc>
       <yloc>320</yloc>
+      <attributes_kjc/>
     </entry>
   </entries>
   <hops>
@@ -998,10 +1021,6 @@ OMG-IMG &lt;= 180 days - recode to EXT-ENT pair</extended_description>
     </group>
     <group>
       <name>{"_":"Embedded MetaStore Elements","namespace":"pentaho","type":"Default Run Configuration"}</name>
-      <attribute>
-        <key>Pentaho local</key>
-        <value>{"children":[{"children":[],"id":"server","value":null},{"children":[],"id":"clustered","value":"N"},{"children":[],"id":"name","value":"Pentaho local"},{"children":[],"id":"description","value":null},{"children":[],"id":"pentaho","value":"N"},{"children":[],"id":"readOnly","value":"Y"},{"children":[],"id":"sendResources","value":"N"},{"children":[],"id":"logRemoteExecutionLocally","value":"N"},{"children":[],"id":"remote","value":"N"},{"children":[],"id":"local","value":"Y"},{"children":[],"id":"showTransformations","value":"N"}],"id":"Pentaho local","value":null,"name":"Pentaho local","owner":null,"ownerPermissionsList":[]}</value>
-      </attribute>
     </group>
   </attributes>
 </job>

@@ -1,382 +1,17 @@
 <job>
-  <name>CORE J04 Data Anonymisation</name>
+  <name>TST01 Check Year Coverage</name>
   <description/>
   <extended_description/>
   <job_version/>
-  <job_status>0</job_status>
-  <directory>/</directory>
-  <created_user/>
-  <created_date>2013/04/02 11:19:39.920</created_date>
-  <modified_user>tmudzana</modified_user>
-  <modified_date>2022/06/14 13:25:40.577</modified_date>
+  <directory>/SAPRIN-QA/Test</directory>
+  <created_user>-</created_user>
+  <created_date>2022/06/21 05:24:21.219</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2022/06/21 07:34:59.214</modified_date>
   <parameters>
     </parameters>
   <slaveservers>
-    <slaveserver>
-      <name>ACS-ETL01 Carte</name>
-      <hostname>ACS-ETL01</hostname>
-      <port>8081</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>CHPC</name>
-      <hostname>saprin.chpc.ac.za</hostname>
-      <port>8081</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>Carte</name>
-      <hostname>Pentaho.ahri.org</hostname>
-      <port>8081</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>DI Server</name>
-      <hostname>localhost</hostname>
-      <port>9080</port>
-      <webAppName>pentaho-di</webAppName>
-      <username>joe</username>
-      <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>ETL_Server</name>
-      <hostname>ACS-ETL01</hostname>
-      <port>8080</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>ID-Server</name>
-      <hostname>localhost</hostname>
-      <port>8181</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>Master</name>
-      <hostname>localhost</hostname>
-      <port>8081</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>Pentaho Beast</name>
-      <hostname>pentaho.ahri.org</hostname>
-      <port>8081</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>Pentaho Server</name>
-      <hostname>localhost</hostname>
-      <port>8080</port>
-      <webAppName>pentaho</webAppName>
-      <username>joe</username>
-      <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>Slave1</name>
-      <hostname>localhost</hostname>
-      <port>8082</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>Slave2</name>
-      <hostname>localhost</hostname>
-      <port>8083</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>Slave3</name>
-      <hostname>localhost</hostname>
-      <port>8084</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>acs-etl01</name>
-      <hostname>acs-etl01</hostname>
-      <port>8080</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsapp01</name>
-      <hostname>cm-metricsapp01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb01</name>
-      <hostname>cm-metricsdb01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb02</name>
-      <hostname>cm-metricsdb02</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb03</name>
-      <hostname>cm-metricsdb03</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsetl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>etl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local1</name>
-      <hostname>localhost</hostname>
-      <port>40001</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local2</name>
-      <hostname>localhost</hostname>
-      <port>40002</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local3</name>
-      <hostname>localhost</hostname>
-      <port>40003</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local4</name>
-      <hostname>localhost</hostname>
-      <port>40004</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local5</name>
-      <hostname>localhost</hostname>
-      <port>40005</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>tmp01</name>
-      <hostname>cm-metricstmp01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>tmp02</name>
-      <hostname>cm-metricstmp02</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>tmp03</name>
-      <hostname>cm-metricstmp03</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>tmp04</name>
-      <hostname>cm-metricstmp04</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-  </slaveservers>
+    </slaveservers>
   <job-log-table>
     <connection/>
     <schema/>
@@ -651,47 +286,7 @@
   <shared_objects_file/>
   <entries>
     <entry>
-      <name>CORE J04-01 Prepare Individual Map</name>
-      <description/>
-      <type>TRANS</type>
-      <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
-      <filename/>
-      <transname>CORE J04-01 Prepare Individual Map</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>208</xloc>
-      <yloc>144</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>START</name>
+      <name>Start</name>
       <description/>
       <type>SPECIAL</type>
       <attributes/>
@@ -708,8 +303,426 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>61</xloc>
-      <yloc>35</yloc>
+      <xloc>192</xloc>
+      <yloc>96</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>Set variables</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <attributes/>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>SourceDirectory</variable_name>
+          <variable_value>D:\Data\iSHARE</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+        <field>
+          <variable_name>SiteCode</variable_name>
+          <variable_value>ZA011</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+        <field>
+          <variable_name>Filename</variable_name>
+          <variable_value>YearCoverage</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>356</xloc>
+      <yloc>96</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>96</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>RawMicroData</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <attributes/>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>RawMicroData</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>672</xloc>
+      <yloc>96</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>Create a folder</name>
+      <description/>
+      <type>CREATE_FOLDER</type>
+      <attributes/>
+      <foldername>${SourceDirectory}\Tests</foldername>
+      <fail_of_folder_exists>N</fail_of_folder_exists>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>520</xloc>
+      <yloc>96</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>MicroDataCleaned</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <attributes/>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>MicroDataCleaned</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>1</nr>
+      <xloc>672</xloc>
+      <yloc>222</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>CMD2021o_v2_S01</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <attributes/>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>CMD2021o_v2_S01</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>1</nr>
+      <xloc>672</xloc>
+      <yloc>348</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>CMD2021o_v2_S02</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <attributes/>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>CMD2021o_v2_S02</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>1</nr>
+      <xloc>672</xloc>
+      <yloc>474</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>CMD2021o_v2_S03</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <attributes/>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>CMD2021o_v2_S03</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>1</nr>
+      <xloc>672</xloc>
+      <yloc>600</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>CMD2021o_v2_S04</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <attributes/>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>CMD2021o_v2_S04</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>1</nr>
+      <xloc>672</xloc>
+      <yloc>726</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage 2</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>222</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage 3</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>348</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage 4</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>474</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage 5</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>600</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage 6</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>726</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -720,60 +733,42 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1328</xloc>
-      <yloc>496</yloc>
+      <xloc>992</xloc>
+      <yloc>1728</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J04-02 Rewrite Individual Map</name>
+      <name>Set SAPRIN data SiteCode</name>
       <description/>
-      <type>TRANS</type>
+      <type>SET_VARIABLES</type>
       <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
+      <replacevars>Y</replacevars>
       <filename/>
-      <transname>CORE J04-02 Rewrite Individual Map</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>SiteCode</variable_name>
+          <variable_value>ZA012</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>672</xloc>
-      <yloc>144</yloc>
+      <yloc>852</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J04-03 Prepare Location Map</name>
+      <name>TST01_01 Determine Year Coverage 8</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
-      <transname>CORE J04-03 Prepare Location Map</transname>
-      <directory>/SAPRIN-QA</directory>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -800,418 +795,347 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>208</xloc>
-      <yloc>240</yloc>
+      <xloc>992</xloc>
+      <yloc>978</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J04-04 Rewrite Location Map</name>
+      <name>RawMicroData 2</name>
       <description/>
-      <type>TRANS</type>
+      <type>SET_VARIABLES</type>
       <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
+      <replacevars>Y</replacevars>
       <filename/>
-      <transname>CORE J04-04 Rewrite Location Map</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>RawMicroData</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>672</xloc>
-      <yloc>240</yloc>
+      <yloc>978</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J04-08 Create Intermediate Anonymised Micro Data</name>
+      <name>MicroDataCleaned 2</name>
       <description/>
-      <type>TRANS</type>
+      <type>SET_VARIABLES</type>
       <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
+      <replacevars>Y</replacevars>
       <filename/>
-      <transname>CORE J04-08 Create Intermediate Anonymised Micro Data</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>MicroDataCleaned</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
       <parallel>N</parallel>
       <draw>Y</draw>
-      <nr>0</nr>
+      <nr>1</nr>
       <xloc>672</xloc>
-      <yloc>400</yloc>
+      <yloc>1104</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J04-09 Generate MD5 DataFingerPrint</name>
+      <name>CMD2021s_v2_S01</name>
       <description/>
-      <type>TRANS</type>
+      <type>SET_VARIABLES</type>
       <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
+      <replacevars>Y</replacevars>
       <filename/>
-      <transname>CORE J04-09 Generate MD5 DataFingerPrint</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>CMD2021s_v2_S01</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
       <parallel>N</parallel>
       <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>208</xloc>
-      <yloc>496</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>CORE J04-05 Create Anonymised IndividualId</name>
-      <description/>
-      <type>TRANS</type>
-      <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
-      <filename/>
-      <transname>CORE J04-05 Create Anonymised IndividualId</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>208</xloc>
-      <yloc>320</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>CORE J04-06 Create Anonymised LocationId</name>
-      <description/>
-      <type>TRANS</type>
-      <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
-      <filename/>
-      <transname>CORE J04-06 Create Anonymised LocationId</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
+      <nr>1</nr>
       <xloc>672</xloc>
-      <yloc>320</yloc>
+      <yloc>1230</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>CORE J04-07 Create Anonymised MotherId</name>
+      <name>CMD2021s_v2_S02</name>
       <description/>
-      <type>TRANS</type>
+      <type>SET_VARIABLES</type>
       <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
+      <replacevars>Y</replacevars>
       <filename/>
-      <transname>CORE J04-07 Create Anonymised MotherId</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>CMD2021s_v2_S02</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
       <parallel>N</parallel>
       <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>208</xloc>
-      <yloc>400</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>Maps Exists</name>
-      <description/>
-      <type>FILE_EXISTS</type>
-      <attributes/>
-      <filename>${OutputDirectory}\${SiteCode}_IndividualMap.cube</filename>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>208</xloc>
-      <yloc>32</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>CORE J04-00 Create Maps</name>
-      <description/>
-      <type>TRANS</type>
-      <attributes/>
-      <specification_method>rep_name</specification_method>
-      <trans_object_id/>
-      <filename/>
-      <transname>CORE J04-00 Create Maps</transname>
-      <directory>/SAPRIN-QA</directory>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
+      <nr>1</nr>
       <xloc>672</xloc>
-      <yloc>32</yloc>
+      <yloc>1356</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>tmpMap</name>
+      <name>CMD2021s_v2_S03</name>
       <description/>
-      <type>DELETE_FILE</type>
+      <type>SET_VARIABLES</type>
       <attributes/>
-      <filename>${OutputDirectory}\tmpMap.cube</filename>
-      <fail_if_file_not_exists>N</fail_if_file_not_exists>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>CMD2021s_v2_S03</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
       <parallel>N</parallel>
       <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>448</xloc>
-      <yloc>496</yloc>
+      <nr>1</nr>
+      <xloc>672</xloc>
+      <yloc>1482</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>MicroDataAnonymisedTmp1</name>
+      <name>CMD2021s_v2_S04</name>
       <description/>
-      <type>DELETE_FILE</type>
+      <type>SET_VARIABLES</type>
       <attributes/>
-      <filename>${OutputDirectory}\MicroDataAnonymisedTmp1.cube</filename>
-      <fail_if_file_not_exists>N</fail_if_file_not_exists>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>CheckFile</variable_name>
+          <variable_value>CMD2021s_v2_S04</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
       <parallel>N</parallel>
       <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>656</xloc>
-      <yloc>496</yloc>
+      <nr>1</nr>
+      <xloc>672</xloc>
+      <yloc>1608</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>MicroDataAnonymisedTmp2</name>
+      <name>TST01_01 Determine Year Coverage 2 2</name>
       <description/>
-      <type>DELETE_FILE</type>
+      <type>TRANS</type>
       <attributes/>
-      <filename>${OutputDirectory}\MicroDataAnonymisedTmp2.cube</filename>
-      <fail_if_file_not_exists>N</fail_if_file_not_exists>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>880</xloc>
-      <yloc>496</yloc>
+      <xloc>992</xloc>
+      <yloc>1104</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>MicroDataAnonymisedTmp3</name>
+      <name>TST01_01 Determine Year Coverage 3 2</name>
       <description/>
-      <type>DELETE_FILE</type>
+      <type>TRANS</type>
       <attributes/>
-      <filename>${OutputDirectory}\MicroDataAnonymisedTmp3.cube</filename>
-      <fail_if_file_not_exists>N</fail_if_file_not_exists>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1104</xloc>
-      <yloc>496</yloc>
+      <xloc>992</xloc>
+      <yloc>1230</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage 4 2</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>1356</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage 5 2</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>1482</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>TST01_01 Determine Year Coverage 6 2</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>TST01_01 Determine Year Coverage</transname>
+      <directory>/SAPRIN-QA/Test</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>992</xloc>
+      <yloc>1608</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
   <hops>
     <hop>
-      <from>CORE J04-01 Prepare Individual Map</from>
-      <to>CORE J04-02 Rewrite Individual Map</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J04-02 Rewrite Individual Map</from>
-      <to>CORE J04-03 Prepare Location Map</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J04-03 Prepare Location Map</from>
-      <to>CORE J04-04 Rewrite Location Map</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J04-08 Create Intermediate Anonymised Micro Data</from>
-      <to>CORE J04-09 Generate MD5 DataFingerPrint</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J04-05 Create Anonymised IndividualId</from>
-      <to>CORE J04-06 Create Anonymised LocationId</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J04-06 Create Anonymised LocationId</from>
-      <to>CORE J04-07 Create Anonymised MotherId</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>START</from>
-      <to>Maps Exists</to>
+      <from>Start</from>
+      <to>Set variables</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1219,8 +1143,8 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>Maps Exists</from>
-      <to>CORE J04-01 Prepare Individual Map</to>
+      <from>RawMicroData</from>
+      <to>TST01_01 Determine Year Coverage</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1228,17 +1152,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Maps Exists</from>
-      <to>CORE J04-00 Create Maps</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>CORE J04-00 Create Maps</from>
-      <to>CORE J04-01 Prepare Individual Map</to>
+      <from>Set variables</from>
+      <to>Create a folder</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1246,8 +1161,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>CORE J04-04 Rewrite Location Map</from>
-      <to>CORE J04-05 Create Anonymised IndividualId</to>
+      <from>Create a folder</from>
+      <to>RawMicroData</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1255,8 +1170,98 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>CORE J04-07 Create Anonymised MotherId</from>
-      <to>CORE J04-08 Create Intermediate Anonymised Micro Data</to>
+      <from>TST01_01 Determine Year Coverage</from>
+      <to>MicroDataCleaned</to>
+      <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>MicroDataCleaned</from>
+      <to>TST01_01 Determine Year Coverage 2</to>
+      <from_nr>1</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TST01_01 Determine Year Coverage 2</from>
+      <to>CMD2021o_v2_S01</to>
+      <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CMD2021o_v2_S01</from>
+      <to>TST01_01 Determine Year Coverage 3</to>
+      <from_nr>1</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TST01_01 Determine Year Coverage 3</from>
+      <to>CMD2021o_v2_S02</to>
+      <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CMD2021o_v2_S02</from>
+      <to>TST01_01 Determine Year Coverage 4</to>
+      <from_nr>1</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TST01_01 Determine Year Coverage 4</from>
+      <to>CMD2021o_v2_S03</to>
+      <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CMD2021o_v2_S03</from>
+      <to>TST01_01 Determine Year Coverage 5</to>
+      <from_nr>1</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TST01_01 Determine Year Coverage 5</from>
+      <to>CMD2021o_v2_S04</to>
+      <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CMD2021o_v2_S04</from>
+      <to>TST01_01 Determine Year Coverage 6</to>
+      <from_nr>1</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Set SAPRIN data SiteCode</from>
+      <to>RawMicroData 2</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1264,8 +1269,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>CORE J04-09 Generate MD5 DataFingerPrint</from>
-      <to>tmpMap</to>
+      <from>RawMicroData 2</from>
+      <to>TST01_01 Determine Year Coverage 8</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1273,34 +1278,97 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>tmpMap</from>
-      <to>MicroDataAnonymisedTmp1</to>
+      <from>TST01_01 Determine Year Coverage 8</from>
+      <to>MicroDataCleaned 2</to>
       <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>MicroDataCleaned 2</from>
+      <to>TST01_01 Determine Year Coverage 2 2</to>
+      <from_nr>1</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>MicroDataAnonymisedTmp1</from>
-      <to>MicroDataAnonymisedTmp2</to>
+      <from>TST01_01 Determine Year Coverage 2 2</from>
+      <to>CMD2021s_v2_S01</to>
       <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CMD2021s_v2_S01</from>
+      <to>TST01_01 Determine Year Coverage 3 2</to>
+      <from_nr>1</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>MicroDataAnonymisedTmp2</from>
-      <to>MicroDataAnonymisedTmp3</to>
+      <from>TST01_01 Determine Year Coverage 3 2</from>
+      <to>CMD2021s_v2_S02</to>
       <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CMD2021s_v2_S02</from>
+      <to>TST01_01 Determine Year Coverage 4 2</to>
+      <from_nr>1</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>MicroDataAnonymisedTmp3</from>
+      <from>TST01_01 Determine Year Coverage 4 2</from>
+      <to>CMD2021s_v2_S03</to>
+      <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CMD2021s_v2_S03</from>
+      <to>TST01_01 Determine Year Coverage 5 2</to>
+      <from_nr>1</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TST01_01 Determine Year Coverage 5 2</from>
+      <to>CMD2021s_v2_S04</to>
+      <from_nr>0</from_nr>
+      <to_nr>1</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CMD2021s_v2_S04</from>
+      <to>TST01_01 Determine Year Coverage 6 2</to>
+      <from_nr>1</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TST01_01 Determine Year Coverage 6 2</from>
       <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -1308,19 +1376,17 @@
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
+    <hop>
+      <from>TST01_01 Determine Year Coverage 6</from>
+      <to>Set SAPRIN data SiteCode</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>N</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
   </hops>
   <notepads>
   </notepads>
-  <attributes>
-    <group>
-      <name>METASTORE.pentaho</name>
-      <attribute>
-        <key>Default Run Configuration</key>
-        <value>{"namespace":"pentaho","id":"Default Run Configuration","name":"Default Run Configuration","description":"Defines a default run configuration","metaStoreName":null}</value>
-      </attribute>
-    </group>
-    <group>
-      <name>{"_":"Embedded MetaStore Elements","namespace":"pentaho","type":"Default Run Configuration"}</name>
-    </group>
-  </attributes>
+  <attributes/>
 </job>

@@ -12,7 +12,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/public/iSHARE</directory>
+    <directory>/SAPRIN-QA</directory>
     <parameters>
     </parameters>
     <log>
@@ -430,8 +430,34 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
     </partitionschemas>
     <slaveservers>
       <slaveserver>
+        <name>acs-etl01</name>
+        <hostname>acs-etl01</hostname>
+        <port>8080</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
         <name>ACS-ETL01 Carte</name>
         <hostname>ACS-ETL01</hostname>
+        <port>8081</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Carte</name>
+        <hostname>Pentaho.ahri.org</hostname>
         <port>8081</port>
         <webAppName/>
         <username>cluster</username>
@@ -456,9 +482,22 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
-        <name>Carte</name>
-        <hostname>Pentaho.ahri.org</hostname>
-        <port>8081</port>
+        <name>cm-metricsapp01</name>
+        <hostname>cm-metricsapp01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb01</name>
+        <hostname>cm-metricsdb01</hostname>
+        <port>40000</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -466,6 +505,45 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb02</name>
+        <hostname>cm-metricsdb02</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb03</name>
+        <hostname>cm-metricsdb03</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsetl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -479,6 +557,19 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>etl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -498,6 +589,71 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <name>ID-Server</name>
         <hostname>localhost</hostname>
         <port>8181</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local1</name>
+        <hostname>localhost</hostname>
+        <port>40001</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local2</name>
+        <hostname>localhost</hostname>
+        <port>40002</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local3</name>
+        <hostname>localhost</hostname>
+        <port>40003</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local4</name>
+        <hostname>localhost</hostname>
+        <port>40004</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local5</name>
+        <hostname>localhost</hostname>
+        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -576,162 +732,6 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <name>Slave3</name>
         <hostname>localhost</hostname>
         <port>8084</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>acs-etl01</name>
-        <hostname>acs-etl01</hostname>
-        <port>8080</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsapp01</name>
-        <hostname>cm-metricsapp01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb01</name>
-        <hostname>cm-metricsdb01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb02</name>
-        <hostname>cm-metricsdb02</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb03</name>
-        <hostname>cm-metricsdb03</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsetl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>etl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local1</name>
-        <hostname>localhost</hostname>
-        <port>40001</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local2</name>
-        <hostname>localhost</hostname>
-        <port>40002</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local3</name>
-        <hostname>localhost</hostname>
-        <port>40003</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local4</name>
-        <hostname>localhost</hostname>
-        <port>40004</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local5</name>
-        <hostname>localhost</hostname>
-        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -866,8 +866,8 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
     <created_user>kherbst</created_user>
     <created_date>2018/09/13 11:55:21.467</created_date>
     <modified_user>kherbst</modified_user>
-    <modified_date>2018/09/16 08:22:46.378</modified_date>
-    <key_for_session_key/>
+    <modified_date>2022/06/14 14:02:14.222</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -875,8 +875,8 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <note>Input Min &amp; Max years for each individual</note>
       <xloc>96</xloc>
       <yloc>96</yloc>
-      <width>231</width>
-      <heigth>26</heigth>
+      <width>286</width>
+      <heigth>30</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
       <fontbold>N</fontbold>
@@ -1144,6 +1144,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <name>IndividualId</name>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1178,6 +1179,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
     <start_at>1</start_at>
     <increment_by>1</increment_by>
     <max_value>999999999</max_value>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1210,6 +1212,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <value_precision>-1</value_precision>
       <replace_field/>
     </formula>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1404,6 +1407,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1598,6 +1602,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1641,6 +1646,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
         <valuefield>1</valuefield>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1665,6 +1671,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>AddHours</field_name>
       <calc_type>CONSTANT</calc_type>
@@ -1695,6 +1702,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1705,6 +1713,47 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
     <GUI>
       <xloc>1040</xloc>
       <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calc Year</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <failIfNoFile>N</failIfNoFile>
+    <calculation>
+      <field_name>Year</field_name>
+      <calc_type>YEAR_OF_DATE</calc_type>
+      <field_a>EventDate</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>192</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1721,12 +1770,13 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
     </partitioning>
     <formula>
       <field_name>Age</field_name>
-      <formula_string>IF(DATE(YEAR([DoB])+DATEDIF([DoB];[EventDate];"y");MONTH([DoB]);DAY([DoB]))&gt;[EventDate];DATEDIF([DoB];[EventDate];"y")-1;DATEDIF([DoB];[EventDate];"y"))</formula_string>
+      <formula_string>IF(DATE(YEAR([DoB])+DATEDIF([DoB];[EventDate];"y");MONTH([DoB]);DAY([DoB]))>[EventDate];DATEDIF([DoB];[EventDate];"y")-1;DATEDIF([DoB];[EventDate];"y"))</formula_string>
       <value_type>Number</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
       <replace_field/>
     </formula>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1751,6 +1801,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>AgeGroup</field_name>
       <calc_type>FLOOR</calc_type>
@@ -1766,6 +1817,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1798,6 +1850,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <value_precision>-1</value_precision>
       <replace_field/>
     </formula>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1822,6 +1875,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>CalendarYear</field_name>
       <calc_type>ADD</calc_type>
@@ -1852,6 +1906,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1884,6 +1939,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <value_precision>-1</value_precision>
       <replace_field/>
     </formula>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1908,6 +1964,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>Birthday</field_name>
       <calc_type>DAY_OF_MONTH</calc_type>
@@ -1968,6 +2025,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1992,6 +2050,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>Tmp</field_name>
       <calc_type>ADD</calc_type>
@@ -2037,6 +2096,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2061,6 +2121,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>CalendarYear</field_name>
       <calc_type>YEAR_OF_DATE</calc_type>
@@ -2076,6 +2137,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2100,6 +2162,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>TwentyEight</field_name>
       <calc_type>CONSTANT</calc_type>
@@ -2175,6 +2238,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2199,6 +2263,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>tmp</field_name>
       <calc_type>SUBTRACT</calc_type>
@@ -2244,6 +2309,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2319,6 +2385,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
         <replace>N</replace>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2350,6 +2417,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
     <nrclonefield>NumYrs</nrclonefield>
     <addclonenum>Y</addclonenum>
     <clonenumfield>YearBase</clonenumfield>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2381,6 +2449,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
     <nrclonefield>NumBirthdays</nrclonefield>
     <addclonenum>Y</addclonenum>
     <clonenumfield>YearBase</clonenumfield>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2395,6 +2464,47 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
     </GUI>
   </step>
   <step>
+    <name>Copy DoB</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <failIfNoFile>N</failIfNoFile>
+    <calculation>
+      <field_name>EventDate_1</field_name>
+      <calc_type>COPY_FIELD</calc_type>
+      <field_a>DoB</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>320</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Drop</name>
     <type>Dummy</type>
     <description/>
@@ -2405,6 +2515,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2429,6 +2540,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2463,6 +2575,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
         <rightvalue>StartDate</rightvalue>
       </condition>
     </compare>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2487,6 +2600,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2520,6 +2634,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2566,6 +2681,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
         </conditions>
       </condition>
     </compare>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2621,6 +2737,7 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
         </conditions>
       </condition>
     </compare>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2631,6 +2748,239 @@ Alert(dateDiff(d1,d2,"wd"));</jsScript_script>
     <GUI>
       <xloc>288</xloc>
       <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>First Events</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Copy DoB</send_true_to>
+    <send_false_to>Not first</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>EventNr</leftvalue>
+        <function>=</function>
+        <rightvalue/>
+        <value>
+          <name>constant</name>
+          <type>Integer</type>
+          <text>1</text>
+          <length>-1</length>
+          <precision>0</precision>
+          <isnull>N</isnull>
+          <mask>####0;-####0</mask>
+        </value>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Group by</name>
+    <type>GroupBy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore/>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname/>
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>CountryId</name>
+      </field>
+      <field>
+        <name>CentreId</name>
+      </field>
+      <field>
+        <name>IndividualId</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>Sex</aggregate>
+        <subject>Sex</subject>
+        <type>FIRST</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>DoB</aggregate>
+        <subject>DoB</subject>
+        <type>FIRST</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>EventCount</aggregate>
+        <subject>EventCount</subject>
+        <type>FIRST</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>MinYear</aggregate>
+        <subject>Year</subject>
+        <type>MIN</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>MaxYear</aggregate>
+        <subject>Year</subject>
+        <type>MAX</type>
+        <valuefield/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>320</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>IndividualId EventDate EventNr</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory>20</free_memory>
+    <compress>Y</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>IndividualId</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>EventDate</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>EventNr</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1376</xloc>
+      <yloc>624</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Not first</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Output Table S04</name>
+    <type>CubeOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04.cube</name>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+    </file>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>880</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2690,6 +3040,7 @@ else
         <replace>Y</replace>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2700,6 +3051,96 @@ else
     <GUI>
       <xloc>528</xloc>
       <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S04_Temp</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04_Temp.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>80</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S04_Temp 2</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04_Temp.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>80</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S04_Temp 3</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04_Temp.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>80</xloc>
+      <yloc>624</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2783,6 +3224,7 @@ else
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2870,6 +3312,7 @@ else
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2963,6 +3406,7 @@ else
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3057,6 +3501,7 @@ else
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3207,6 +3652,7 @@ else
         <storage_type>normal</storage_type>
       </meta>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3349,6 +3795,7 @@ else
         <storage_type/>
       </meta>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3359,6 +3806,102 @@ else
     <GUI>
       <xloc>480</xloc>
       <yloc>880</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 7</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>RecNr</name>
+      </field>
+      <field>
+        <name>CountryId</name>
+      </field>
+      <field>
+        <name>CentreId</name>
+      </field>
+      <field>
+        <name>IndividualId</name>
+      </field>
+      <field>
+        <name>Sex</name>
+      </field>
+      <field>
+        <name>DoB</name>
+      </field>
+      <field>
+        <name>EventCount</name>
+      </field>
+      <field>
+        <name>EventNr</name>
+      </field>
+      <field>
+        <name>EventCode</name>
+      </field>
+      <field>
+        <name>EventDate_1</name>
+        <rename>EventDate</rename>
+      </field>
+      <field>
+        <name>ObservationDate</name>
+      </field>
+      <field>
+        <name>LocationId</name>
+      </field>
+      <field>
+        <name>MotherId</name>
+      </field>
+      <field>
+        <name>DeliveryId</name>
+      </field>
+      <field>
+        <name>Cause1</name>
+      </field>
+      <field>
+        <name>Cause2</name>
+      </field>
+      <field>
+        <name>Cause3</name>
+      </field>
+      <field>
+        <name>Likelihood1</name>
+      </field>
+      <field>
+        <name>Likelihood2</name>
+      </field>
+      <field>
+        <name>Likelihood3</name>
+      </field>
+      <field>
+        <name>Resident</name>
+      </field>
+      <field>
+        <name>EventDate</name>
+        <rename>StartDate</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>480</xloc>
+      <yloc>480</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3379,6 +3922,7 @@ else
         <replaceby>EventDate</replaceby>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -3389,514 +3933,6 @@ else
     <GUI>
       <xloc>1376</xloc>
       <yloc>160</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>IndividualId EventDate EventNr</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory>20</free_memory>
-    <compress>Y</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>IndividualId</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>EventDate</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>EventNr</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1376</xloc>
-      <yloc>624</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S04_Temp</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04_Temp.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>80</xloc>
-      <yloc>160</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Group by</name>
-    <type>GroupBy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <all_rows>N</all_rows>
-    <ignore_aggregate>N</ignore_aggregate>
-    <field_ignore/>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>grp</prefix>
-    <add_linenr>N</add_linenr>
-    <linenr_fieldname/>
-    <give_back_row>N</give_back_row>
-    <group>
-      <field>
-        <name>CountryId</name>
-      </field>
-      <field>
-        <name>CentreId</name>
-      </field>
-      <field>
-        <name>IndividualId</name>
-      </field>
-    </group>
-    <fields>
-      <field>
-        <aggregate>Sex</aggregate>
-        <subject>Sex</subject>
-        <type>FIRST</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>DoB</aggregate>
-        <subject>DoB</subject>
-        <type>FIRST</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>EventCount</aggregate>
-        <subject>EventCount</subject>
-        <type>FIRST</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>MinYear</aggregate>
-        <subject>Year</subject>
-        <type>MIN</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>MaxYear</aggregate>
-        <subject>Year</subject>
-        <type>MAX</type>
-        <valuefield/>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>320</xloc>
-      <yloc>160</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Calc Year</name>
-    <type>Calculator</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <calculation>
-      <field_name>Year</field_name>
-      <calc_type>YEAR_OF_DATE</calc_type>
-      <field_a>EventDate</field_a>
-      <field_b/>
-      <field_c/>
-      <value_type>Integer</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <remove>N</remove>
-      <conversion_mask/>
-      <decimal_symbol/>
-      <grouping_symbol/>
-      <currency_symbol/>
-    </calculation>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>192</xloc>
-      <yloc>160</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S04_Temp 2</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04_Temp.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>80</xloc>
-      <yloc>480</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>First Events</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Copy DoB</send_true_to>
-    <send_false_to>Not first</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>EventNr</leftvalue>
-        <function>=</function>
-        <rightvalue/>
-        <value>
-          <name>constant</name>
-          <type>Integer</type>
-          <text>1</text>
-          <length>-1</length>
-          <precision>0</precision>
-          <isnull>N</isnull>
-          <mask>####0;-####0</mask>
-        </value>
-      </condition>
-    </compare>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>208</xloc>
-      <yloc>480</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Not first</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>208</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S04_Temp 3</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04_Temp.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>80</xloc>
-      <yloc>624</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Copy DoB</name>
-    <type>Calculator</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <calculation>
-      <field_name>EventDate_1</field_name>
-      <calc_type>COPY_FIELD</calc_type>
-      <field_a>DoB</field_a>
-      <field_b/>
-      <field_c/>
-      <value_type>Date</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <remove>N</remove>
-      <conversion_mask/>
-      <decimal_symbol/>
-      <grouping_symbol/>
-      <currency_symbol/>
-    </calculation>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>320</xloc>
-      <yloc>480</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values 7</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>RecNr</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CountryId</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CentreId</name>
-        <rename/>
-      </field>
-      <field>
-        <name>IndividualId</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Sex</name>
-        <rename/>
-      </field>
-      <field>
-        <name>DoB</name>
-        <rename/>
-      </field>
-      <field>
-        <name>EventCount</name>
-        <rename/>
-      </field>
-      <field>
-        <name>EventNr</name>
-        <rename/>
-      </field>
-      <field>
-        <name>EventCode</name>
-        <rename/>
-      </field>
-      <field>
-        <name>EventDate_1</name>
-        <rename>EventDate</rename>
-      </field>
-      <field>
-        <name>ObservationDate</name>
-        <rename/>
-      </field>
-      <field>
-        <name>LocationId</name>
-        <rename/>
-      </field>
-      <field>
-        <name>MotherId</name>
-        <rename/>
-      </field>
-      <field>
-        <name>DeliveryId</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Cause1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Cause2</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Cause3</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Likelihood1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Likelihood2</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Likelihood3</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Resident</name>
-        <rename/>
-      </field>
-      <field>
-        <name>EventDate</name>
-        <rename>StartDate</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>480</xloc>
-      <yloc>480</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Output Table S04</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>640</xloc>
-      <yloc>880</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3905,4 +3941,5 @@ else
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
+  <attributes/>
 </transformation>

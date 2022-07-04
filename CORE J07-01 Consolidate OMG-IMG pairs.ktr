@@ -6,7 +6,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/public/iSHARE</directory>
+    <directory>/SAPRIN-QA</directory>
     <parameters>
     </parameters>
     <log>
@@ -424,8 +424,34 @@
     </partitionschemas>
     <slaveservers>
       <slaveserver>
+        <name>acs-etl01</name>
+        <hostname>acs-etl01</hostname>
+        <port>8080</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
         <name>ACS-ETL01 Carte</name>
         <hostname>ACS-ETL01</hostname>
+        <port>8081</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Carte</name>
+        <hostname>Pentaho.ahri.org</hostname>
         <port>8081</port>
         <webAppName/>
         <username>cluster</username>
@@ -450,9 +476,22 @@
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
-        <name>Carte</name>
-        <hostname>Pentaho.ahri.org</hostname>
-        <port>8081</port>
+        <name>cm-metricsapp01</name>
+        <hostname>cm-metricsapp01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb01</name>
+        <hostname>cm-metricsdb01</hostname>
+        <port>40000</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -460,6 +499,45 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb02</name>
+        <hostname>cm-metricsdb02</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb03</name>
+        <hostname>cm-metricsdb03</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsetl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -473,6 +551,19 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>etl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -492,6 +583,71 @@
         <name>ID-Server</name>
         <hostname>localhost</hostname>
         <port>8181</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local1</name>
+        <hostname>localhost</hostname>
+        <port>40001</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local2</name>
+        <hostname>localhost</hostname>
+        <port>40002</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local3</name>
+        <hostname>localhost</hostname>
+        <port>40003</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local4</name>
+        <hostname>localhost</hostname>
+        <port>40004</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local5</name>
+        <hostname>localhost</hostname>
+        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -570,162 +726,6 @@
         <name>Slave3</name>
         <hostname>localhost</hostname>
         <port>8084</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>acs-etl01</name>
-        <hostname>acs-etl01</hostname>
-        <port>8080</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsapp01</name>
-        <hostname>cm-metricsapp01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb01</name>
-        <hostname>cm-metricsdb01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb02</name>
-        <hostname>cm-metricsdb02</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb03</name>
-        <hostname>cm-metricsdb03</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsetl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>etl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local1</name>
-        <hostname>localhost</hostname>
-        <port>40001</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local2</name>
-        <hostname>localhost</hostname>
-        <port>40002</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local3</name>
-        <hostname>localhost</hostname>
-        <port>40003</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local4</name>
-        <hostname>localhost</hostname>
-        <port>40004</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local5</name>
-        <hostname>localhost</hostname>
-        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -860,8 +860,8 @@
     <created_user>kherbst</created_user>
     <created_date>2018/09/13 11:55:45.772</created_date>
     <modified_user>tmudzana</modified_user>
-    <modified_date>2018/10/05 04:32:07.320</modified_date>
-    <key_for_session_key/>
+    <modified_date>2022/06/14 13:58:11.136</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -884,7 +884,7 @@
     </hop>
     <hop>
       <from>Calculate Date Difference</from>
-      <to>Filter if date difference&gt;180</to>
+      <to>Filter if date difference>180</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -893,7 +893,7 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter if date difference&gt;180</from>
+      <from>Filter if date difference>180</from>
       <to>Dummy (do nothing)</to>
       <enabled>Y</enabled>
     </hop>
@@ -923,7 +923,7 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter if date difference&gt;180</from>
+      <from>Filter if date difference>180</from>
       <to>Drop DateDiff</to>
       <enabled>Y</enabled>
     </hop>
@@ -1038,6 +1038,7 @@
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1087,6 +1088,7 @@
         <valuefield>1</valuefield>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1111,6 +1113,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>DateDif</field_name>
       <calc_type>DATE_DIFF</calc_type>
@@ -1126,6 +1129,7 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1150,6 +1154,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <failIfNoFile>N</failIfNoFile>
     <calculation>
       <field_name>Legal</field_name>
       <calc_type>SUBTRACT</calc_type>
@@ -1180,6 +1185,7 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1189,907 +1195,6 @@
     </remotesteps>
     <GUI>
       <xloc>1952</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Detect empty stream</name>
-    <type>DetectEmptyStream</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1537</xloc>
-      <yloc>403</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Drop DateDiff</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>RecNr</name>
-      </field>
-      <field>
-        <name>CountryId</name>
-      </field>
-      <field>
-        <name>CentreId</name>
-      </field>
-      <field>
-        <name>IndividualId</name>
-      </field>
-      <field>
-        <name>Sex</name>
-      </field>
-      <field>
-        <name>DoB</name>
-      </field>
-      <field>
-        <name>EventCount</name>
-      </field>
-      <field>
-        <name>EventNr</name>
-      </field>
-      <field>
-        <name>EventCode</name>
-      </field>
-      <field>
-        <name>EventDate</name>
-      </field>
-      <field>
-        <name>ObservationDate</name>
-      </field>
-      <field>
-        <name>LocationId</name>
-      </field>
-      <field>
-        <name>MotherId</name>
-      </field>
-      <field>
-        <name>DeliveryId</name>
-      </field>
-      <field>
-        <name>Cause1</name>
-      </field>
-      <field>
-        <name>Cause2</name>
-      </field>
-      <field>
-        <name>Cause3</name>
-      </field>
-      <field>
-        <name>Likelihood1</name>
-      </field>
-      <field>
-        <name>Likelihood2</name>
-      </field>
-      <field>
-        <name>Likelihood3</name>
-      </field>
-      <field>
-        <name>PrevEvent</name>
-      </field>
-      <field>
-        <name>PrevDate</name>
-      </field>
-      <field>
-        <name>PrevRecNr</name>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>712</xloc>
-      <yloc>433</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Dummy (do nothing)</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>891</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Filter OMG-IMG pairs</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Calculate Date Difference</send_true_to>
-    <send_false_to>Select Original Values</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <conditions>
-          <condition>
-            <negated>N</negated>
-            <leftvalue>PrevEvent</leftvalue>
-            <function>=</function>
-            <rightvalue/>
-            <value>
-              <name>constant</name>
-              <type>String</type>
-              <text>OMG</text>
-              <length>-1</length>
-              <precision>-1</precision>
-              <isnull>N</isnull>
-              <mask/>
-            </value>
-          </condition>
-          <condition>
-            <negated>N</negated>
-            <operator>AND</operator>
-            <leftvalue>EventCode</leftvalue>
-            <function>=</function>
-            <rightvalue/>
-            <value>
-              <name>constant</name>
-              <type>String</type>
-              <text>IMG</text>
-              <length>-1</length>
-              <precision>-1</precision>
-              <isnull>N</isnull>
-              <mask/>
-            </value>
-          </condition>
-        </conditions>
-      </condition>
-    </compare>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>368</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Filter if date difference&gt;180</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Dummy (do nothing)</send_true_to>
-    <send_false_to>Drop DateDiff</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>DateDif</leftvalue>
-        <function>&lt;=</function>
-        <rightvalue/>
-        <value>
-          <name>constant</name>
-          <type>Integer</type>
-          <text>180</text>
-          <length>-1</length>
-          <precision>0</precision>
-          <isnull>N</isnull>
-          <mask>#;-#</mask>
-        </value>
-      </condition>
-    </compare>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>713</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Get MetricTable</name>
-    <type>GetVariable</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>MetricTable</name>
-        <variable>${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S02</variable>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2272</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Group by CentreId</name>
-    <type>GroupBy</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <all_rows>N</all_rows>
-    <ignore_aggregate>N</ignore_aggregate>
-    <field_ignore/>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>grp</prefix>
-    <add_linenr>N</add_linenr>
-    <linenr_fieldname/>
-    <give_back_row>N</give_back_row>
-    <group>
-      <field>
-        <name>CentreId</name>
-      </field>
-    </group>
-    <fields>
-      <field>
-        <aggregate>Violations</aggregate>
-        <subject>RecNr</subject>
-        <type>COUNT_ALL</type>
-        <valuefield/>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1460</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Group by CentreId 2</name>
-    <type>GroupBy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <all_rows>N</all_rows>
-    <ignore_aggregate>N</ignore_aggregate>
-    <field_ignore/>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>grp</prefix>
-    <add_linenr>N</add_linenr>
-    <linenr_fieldname/>
-    <give_back_row>N</give_back_row>
-    <group>
-      <field>
-        <name>CentreId</name>
-      </field>
-    </group>
-    <fields>
-      <field>
-        <aggregate>Events</aggregate>
-        <subject>RecNr</subject>
-        <type>COUNT_ALL</type>
-        <valuefield/>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1104</xloc>
-      <yloc>112</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>If field value is null</name>
-    <type>IfNull</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <replaceAllByValue/>
-    <replaceAllMask/>
-    <selectFields>Y</selectFields>
-    <selectValuesType>N</selectValuesType>
-    <setEmptyStringAll>Y</setEmptyStringAll>
-    <valuetypes>
-      </valuetypes>
-    <fields>
-      <field>
-        <name>CentreId</name>
-        <value>${SiteCode}</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>Violations</name>
-        <value>0</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1601</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Merge Join</name>
-    <type>MergeJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <join_type>INNER</join_type>
-    <step1>If field value is null</step1>
-    <step2>Group by CentreId 2</step2>
-    <keys_1>
-      <key>CentreId</key>
-    </keys_1>
-    <keys_2>
-      <key>CentreId</key>
-    </keys_2>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1761</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Recode IMG to ENT</name>
-    <type>SetValueConstant</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <usevar>N</usevar>
-    <fields>
-      <field>
-        <name>EventCode</name>
-        <value>ENT</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>891</xloc>
-      <yloc>432</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Run Date</name>
-    <type>Formula</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <formula>
-      <field_name>RunDate</field_name>
-      <formula_string>NOW()</formula_string>
-      <value_type>Date</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <replace_field/>
-    </formula>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2136</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select Original Values</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>RecNr</name>
-      </field>
-      <field>
-        <name>CountryId</name>
-      </field>
-      <field>
-        <name>CentreId</name>
-      </field>
-      <field>
-        <name>IndividualId</name>
-      </field>
-      <field>
-        <name>Sex</name>
-      </field>
-      <field>
-        <name>DoB</name>
-      </field>
-      <field>
-        <name>EventCount</name>
-      </field>
-      <field>
-        <name>EventNr</name>
-      </field>
-      <field>
-        <name>EventCode</name>
-      </field>
-      <field>
-        <name>EventDate</name>
-      </field>
-      <field>
-        <name>ObservationDate</name>
-      </field>
-      <field>
-        <name>LocationId</name>
-      </field>
-      <field>
-        <name>MotherId</name>
-      </field>
-      <field>
-        <name>DeliveryId</name>
-      </field>
-      <field>
-        <name>Cause1</name>
-      </field>
-      <field>
-        <name>Cause2</name>
-      </field>
-      <field>
-        <name>Cause3</name>
-      </field>
-      <field>
-        <name>Likelihood1</name>
-      </field>
-      <field>
-        <name>Likelihood2</name>
-      </field>
-      <field>
-        <name>Likelihood3</name>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>712</xloc>
-      <yloc>574</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>CentreId</name>
-      </field>
-      <field>
-        <name>RecNr</name>
-      </field>
-      <field>
-        <name>IndividualId</name>
-      </field>
-      <field>
-        <name>EventCount</name>
-      </field>
-      <field>
-        <name>EventNr</name>
-      </field>
-      <field>
-        <name>EventCode</name>
-      </field>
-      <field>
-        <name>EventDate</name>
-      </field>
-      <field>
-        <name>PrevEvent</name>
-      </field>
-      <field>
-        <name>PrevDate</name>
-      </field>
-      <field>
-        <name>PrevRecNr</name>
-      </field>
-      <field>
-        <name>DateDif</name>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1095</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values 2</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>CentreId</name>
-      </field>
-      <field>
-        <name>MetricTable</name>
-      </field>
-      <field>
-        <name>QMetric</name>
-      </field>
-      <field>
-        <name>Violations</name>
-        <rename>Illegal</rename>
-      </field>
-      <field>
-        <name>Legal</name>
-      </field>
-      <field>
-        <name>Events</name>
-        <rename>Total</rename>
-      </field>
-      <field>
-        <name>Metric</name>
-      </field>
-      <field>
-        <name>RunDate</name>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>Total</name>
-        <rename>Total</rename>
-        <type>Integer</type>
-        <length>8</length>
-        <precision>0</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>Legal</name>
-        <rename>Legal</rename>
-        <type>Integer</type>
-        <length>8</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>Illegal</name>
-        <rename>Illegal</rename>
-        <type>Integer</type>
-        <length>8</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2406</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>RecNr</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>Y</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>RecNr</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>892</xloc>
-      <yloc>574</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Input S02</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S02.cube</name>
-    </file>
-    <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>32</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Table S03_Temp output</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S03_Temp.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1024</xloc>
-      <yloc>576</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Output Events to be recoded</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S03_Recode_OMG.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1280</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2108,7 +1213,6 @@
     <header>Y</header>
     <footer>N</footer>
     <makeSheetActive>Y</makeSheetActive>
-    <rowWritingMethod>push</rowWritingMethod>
     <startingCell>A1</startingCell>
     <appendOmitHeader>N</appendOmitHeader>
     <appendOffset>0</appendOffset>
@@ -2242,6 +1346,7 @@
         <hyperlinkField/>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2252,6 +1357,972 @@
     <GUI>
       <xloc>2528</xloc>
       <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Detect empty stream</name>
+    <type>DetectEmptyStream</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1537</xloc>
+      <yloc>403</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Drop DateDiff</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>RecNr</name>
+      </field>
+      <field>
+        <name>CountryId</name>
+      </field>
+      <field>
+        <name>CentreId</name>
+      </field>
+      <field>
+        <name>IndividualId</name>
+      </field>
+      <field>
+        <name>Sex</name>
+      </field>
+      <field>
+        <name>DoB</name>
+      </field>
+      <field>
+        <name>EventCount</name>
+      </field>
+      <field>
+        <name>EventNr</name>
+      </field>
+      <field>
+        <name>EventCode</name>
+      </field>
+      <field>
+        <name>EventDate</name>
+      </field>
+      <field>
+        <name>ObservationDate</name>
+      </field>
+      <field>
+        <name>LocationId</name>
+      </field>
+      <field>
+        <name>MotherId</name>
+      </field>
+      <field>
+        <name>DeliveryId</name>
+      </field>
+      <field>
+        <name>Cause1</name>
+      </field>
+      <field>
+        <name>Cause2</name>
+      </field>
+      <field>
+        <name>Cause3</name>
+      </field>
+      <field>
+        <name>Likelihood1</name>
+      </field>
+      <field>
+        <name>Likelihood2</name>
+      </field>
+      <field>
+        <name>Likelihood3</name>
+      </field>
+      <field>
+        <name>PrevEvent</name>
+      </field>
+      <field>
+        <name>PrevDate</name>
+      </field>
+      <field>
+        <name>PrevRecNr</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>712</xloc>
+      <yloc>433</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>891</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter OMG-IMG pairs</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Calculate Date Difference</send_true_to>
+    <send_false_to>Select Original Values</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <conditions>
+          <condition>
+            <negated>N</negated>
+            <leftvalue>PrevEvent</leftvalue>
+            <function>=</function>
+            <rightvalue/>
+            <value>
+              <name>constant</name>
+              <type>String</type>
+              <text>OMG</text>
+              <length>-1</length>
+              <precision>-1</precision>
+              <isnull>N</isnull>
+              <mask/>
+            </value>
+          </condition>
+          <condition>
+            <negated>N</negated>
+            <operator>AND</operator>
+            <leftvalue>EventCode</leftvalue>
+            <function>=</function>
+            <rightvalue/>
+            <value>
+              <name>constant</name>
+              <type>String</type>
+              <text>IMG</text>
+              <length>-1</length>
+              <precision>-1</precision>
+              <isnull>N</isnull>
+              <mask/>
+            </value>
+          </condition>
+        </conditions>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>368</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter if date difference>180</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Dummy (do nothing)</send_true_to>
+    <send_false_to>Drop DateDiff</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>DateDif</leftvalue>
+        <function>&lt;=</function>
+        <rightvalue/>
+        <value>
+          <name>constant</name>
+          <type>Integer</type>
+          <text>180</text>
+          <length>-1</length>
+          <precision>0</precision>
+          <isnull>N</isnull>
+          <mask>#;-#</mask>
+        </value>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>713</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Get MetricTable</name>
+    <type>GetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>MetricTable</name>
+        <variable>${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S02</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2272</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Group by CentreId</name>
+    <type>GroupBy</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore/>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname/>
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>CentreId</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>Violations</aggregate>
+        <subject>RecNr</subject>
+        <type>COUNT_ALL</type>
+        <valuefield/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1460</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Group by CentreId 2</name>
+    <type>GroupBy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore/>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname/>
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>CentreId</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>Events</aggregate>
+        <subject>RecNr</subject>
+        <type>COUNT_ALL</type>
+        <valuefield/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1104</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>If field value is null</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <replaceAllByValue/>
+    <replaceAllMask/>
+    <selectFields>Y</selectFields>
+    <selectValuesType>N</selectValuesType>
+    <setEmptyStringAll>Y</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      <field>
+        <name>CentreId</name>
+        <value>${SiteCode}</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>Violations</name>
+        <value>0</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1601</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>If field value is null 2</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <replaceAllByValue/>
+    <replaceAllMask/>
+    <selectFields>Y</selectFields>
+    <selectValuesType>N</selectValuesType>
+    <setEmptyStringAll>N</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      <field>
+        <name>Violations</name>
+        <value>0</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>Events</name>
+        <value>0</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1840</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Input S02</name>
+    <type>CubeInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S02.cube</name>
+    </file>
+    <limit>0</limit>
+    <addfilenameresult>N</addfilenameresult>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>32</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge Join</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>If field value is null</step1>
+    <step2>Group by CentreId 2</step2>
+    <keys_1>
+      <key>CentreId</key>
+    </keys_1>
+    <keys_2>
+      <key>CentreId</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1761</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Output Events to be recoded</name>
+    <type>CubeOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S03_Recode_OMG.cube</name>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+    </file>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1280</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>RecNr</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>Y</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>RecNr</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>892</xloc>
+      <yloc>574</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Recode IMG to ENT</name>
+    <type>SetValueConstant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <usevar>N</usevar>
+    <fields>
+      <field>
+        <name>EventCode</name>
+        <value>ENT</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>891</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Run Date</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <formula>
+      <field_name>RunDate</field_name>
+      <formula_string>NOW()</formula_string>
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field/>
+    </formula>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2136</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select Original Values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>RecNr</name>
+      </field>
+      <field>
+        <name>CountryId</name>
+      </field>
+      <field>
+        <name>CentreId</name>
+      </field>
+      <field>
+        <name>IndividualId</name>
+      </field>
+      <field>
+        <name>Sex</name>
+      </field>
+      <field>
+        <name>DoB</name>
+      </field>
+      <field>
+        <name>EventCount</name>
+      </field>
+      <field>
+        <name>EventNr</name>
+      </field>
+      <field>
+        <name>EventCode</name>
+      </field>
+      <field>
+        <name>EventDate</name>
+      </field>
+      <field>
+        <name>ObservationDate</name>
+      </field>
+      <field>
+        <name>LocationId</name>
+      </field>
+      <field>
+        <name>MotherId</name>
+      </field>
+      <field>
+        <name>DeliveryId</name>
+      </field>
+      <field>
+        <name>Cause1</name>
+      </field>
+      <field>
+        <name>Cause2</name>
+      </field>
+      <field>
+        <name>Cause3</name>
+      </field>
+      <field>
+        <name>Likelihood1</name>
+      </field>
+      <field>
+        <name>Likelihood2</name>
+      </field>
+      <field>
+        <name>Likelihood3</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>712</xloc>
+      <yloc>574</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>CentreId</name>
+      </field>
+      <field>
+        <name>RecNr</name>
+      </field>
+      <field>
+        <name>IndividualId</name>
+      </field>
+      <field>
+        <name>EventCount</name>
+      </field>
+      <field>
+        <name>EventNr</name>
+      </field>
+      <field>
+        <name>EventCode</name>
+      </field>
+      <field>
+        <name>EventDate</name>
+      </field>
+      <field>
+        <name>PrevEvent</name>
+      </field>
+      <field>
+        <name>PrevDate</name>
+      </field>
+      <field>
+        <name>PrevRecNr</name>
+      </field>
+      <field>
+        <name>DateDif</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1095</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>CentreId</name>
+      </field>
+      <field>
+        <name>MetricTable</name>
+      </field>
+      <field>
+        <name>QMetric</name>
+      </field>
+      <field>
+        <name>Violations</name>
+        <rename>Illegal</rename>
+      </field>
+      <field>
+        <name>Legal</name>
+      </field>
+      <field>
+        <name>Events</name>
+        <rename>Total</rename>
+      </field>
+      <field>
+        <name>Metric</name>
+      </field>
+      <field>
+        <name>RunDate</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>Total</name>
+        <rename>Total</rename>
+        <type>Integer</type>
+        <length>8</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Legal</name>
+        <rename>Legal</rename>
+        <type>Integer</type>
+        <length>8</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Illegal</name>
+        <rename>Illegal</rename>
+        <type>Integer</type>
+        <length>8</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2406</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table S03_Temp output</name>
+    <type>CubeOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S03_Temp.cube</name>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+    </file>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1024</xloc>
+      <yloc>576</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2269,7 +2340,6 @@
     <header>N</header>
     <footer>N</footer>
     <makeSheetActive>Y</makeSheetActive>
-    <rowWritingMethod>overwrite</rowWritingMethod>
     <startingCell>L${MetricOutputRow}</startingCell>
     <appendOmitHeader>N</appendOmitHeader>
     <appendOffset>0</appendOffset>
@@ -2343,6 +2413,7 @@
         <hyperlinkField/>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2356,54 +2427,10 @@
       <draw>Y</draw>
     </GUI>
   </step>
-  <step>
-    <name>If field value is null 2</name>
-    <type>IfNull</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <replaceAllByValue/>
-    <replaceAllMask/>
-    <selectFields>Y</selectFields>
-    <selectValuesType>N</selectValuesType>
-    <setEmptyStringAll>N</setEmptyStringAll>
-    <valuetypes>
-      </valuetypes>
-    <fields>
-      <field>
-        <name>Violations</name>
-        <value>0</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>Events</name>
-        <value>0</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1840</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
   <step_error_handling>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
+  <attributes/>
 </transformation>

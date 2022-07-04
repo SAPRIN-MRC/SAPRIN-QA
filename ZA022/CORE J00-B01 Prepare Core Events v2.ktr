@@ -1,12 +1,12 @@
 <transformation>
   <info>
-    <name>CORE J00-B03 Prepare Delivery Events</name>
+    <name>CORE J00-B01 Prepare Core Events v2</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/SAPRIN-QA/ZA012</directory>
+    <directory>/public/iSHARE/ZA021</directory>
     <parameters>
     </parameters>
     <log>
@@ -424,34 +424,8 @@
     </partitionschemas>
     <slaveservers>
       <slaveserver>
-        <name>acs-etl01</name>
-        <hostname>acs-etl01</hostname>
-        <port>8080</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
         <name>ACS-ETL01 Carte</name>
         <hostname>ACS-ETL01</hostname>
-        <port>8081</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>Carte</name>
-        <hostname>Pentaho.ahri.org</hostname>
         <port>8081</port>
         <webAppName/>
         <username>cluster</username>
@@ -476,22 +450,9 @@
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
-        <name>cm-metricsapp01</name>
-        <hostname>cm-metricsapp01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb01</name>
-        <hostname>cm-metricsdb01</hostname>
-        <port>40000</port>
+        <name>Carte</name>
+        <hostname>Pentaho.ahri.org</hostname>
+        <port>8081</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -499,45 +460,6 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb02</name>
-        <hostname>cm-metricsdb02</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsdb03</name>
-        <hostname>cm-metricsdb03</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>cm-metricsetl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -551,19 +473,6 @@
         <proxy_port/>
         <non_proxy_hosts/>
         <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>etl01</name>
-        <hostname>cm-metricsetl01</hostname>
-        <port>40000</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
         <sslMode>N</sslMode>
       </slaveserver>
       <slaveserver>
@@ -583,71 +492,6 @@
         <name>ID-Server</name>
         <hostname>localhost</hostname>
         <port>8181</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local1</name>
-        <hostname>localhost</hostname>
-        <port>40001</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local2</name>
-        <hostname>localhost</hostname>
-        <port>40002</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local3</name>
-        <hostname>localhost</hostname>
-        <port>40003</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local4</name>
-        <hostname>localhost</hostname>
-        <port>40004</port>
-        <webAppName/>
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
-        <master>N</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
-      <slaveserver>
-        <name>local5</name>
-        <hostname>localhost</hostname>
-        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -726,6 +570,162 @@
         <name>Slave3</name>
         <hostname>localhost</hostname>
         <port>8084</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>acs-etl01</name>
+        <hostname>acs-etl01</hostname>
+        <port>8080</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsapp01</name>
+        <hostname>cm-metricsapp01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb01</name>
+        <hostname>cm-metricsdb01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb02</name>
+        <hostname>cm-metricsdb02</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsdb03</name>
+        <hostname>cm-metricsdb03</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>cm-metricsetl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>etl01</name>
+        <hostname>cm-metricsetl01</hostname>
+        <port>40000</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local1</name>
+        <hostname>localhost</hostname>
+        <port>40001</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local2</name>
+        <hostname>localhost</hostname>
+        <port>40002</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local3</name>
+        <hostname>localhost</hostname>
+        <port>40003</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local4</name>
+        <hostname>localhost</hostname>
+        <port>40004</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local5</name>
+        <hostname>localhost</hostname>
+        <port>40005</port>
         <webAppName/>
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -857,130 +857,167 @@
         </slaveservers>
       </clusterschema>
     </clusterschemas>
-    <created_user>kherbst</created_user>
-    <created_date>2018/09/13 11:57:17.655</created_date>
-    <modified_user>tmudzana</modified_user>
-    <modified_date>2022/06/13 15:17:07.888</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <created_user>-</created_user>
+    <created_date>2013/01/21 07:36:01.524</created_date>
+    <modified_user>kherbst</modified_user>
+    <modified_date>2018/10/11 12:01:27.735</modified_date>
+    <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <order>
     <hop>
-      <from>Merge Join</from>
-      <to>Select values</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Aggregate to deliveries</from>
-      <to>MotherId null</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>MotherId null</from>
-      <to>Mother Is Null</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Merge Join</from>
-      <to>MotherId DoB</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>MotherId null</from>
-      <to>MotherId DoB 2</to>
+      <from>Sort Residence</from>
+      <to>Merge Join</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Select values</from>
-      <to>Sort by MotherId &amp; DoB</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Sort by MotherId &amp; DoB</from>
-      <to>Aggregate to deliveries</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Select Mother &amp; ChildIds</from>
-      <to>ChildId</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>ChildId 2</from>
       <to>Merge Join</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>ChildId</from>
-      <to>Merge Join</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>MotherId DoB</from>
-      <to>Merge Join 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Merge Join 2</from>
+      <from>Merge Join</from>
       <to>Select values 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>MotherId DoB 2</from>
-      <to>Add DeliveryId</to>
+      <from>Select values 2</from>
+      <to>If field value is null</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Add DeliveryId</from>
+      <from>If field value is null</from>
+      <to>Calculator</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calculator</from>
+      <to>Map_Start_Event</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Map_Start_Event</from>
+      <to>Sort Residence 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Input_Outmigration</from>
       <to>Select values 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Add DeliveryId</from>
+      <from>Sort Residence 2</from>
       <to>Merge Join 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values 2</from>
-      <to>Save Child Delivery Info</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Select values 3</from>
-      <to>Save Deliveries 2</to>
+      <to>Merge Join 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>De-serialize from file</from>
-      <to>Select Mother &amp; ChildIds</to>
+      <from>If field value is null 2</from>
+      <to>Calculator 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>IndividualEvents</from>
-      <to>Births</to>
+      <from>Merge Join 2</from>
+      <to>If field value is null 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Births</from>
-      <to>Ignore</to>
+      <from>Calculator 2</from>
+      <to>Map End Event</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Births</from>
+      <from>Sort Ind StartDate StartSeq</from>
+      <to>Split Start &amp; End Events</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Split Start &amp; End Events</from>
+      <to>Add EventNr</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add EventNr</from>
+      <to>Select values 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Input_Residence_Table</from>
+      <to>Sort Residence</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Input_Inmigration</from>
+      <to>Sort Residence 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort Residence 3</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Map End Event</from>
       <to>Select values 4</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Select values 4</from>
-      <to>ChildId 2</to>
+      <to>Map_StartEvent_to_Number</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Map_StartEvent_to_Number</from>
+      <to>Sort Ind StartDate StartSeq</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 5</from>
+      <to>Output IndividualEvents</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>Add DeliveryId</name>
-    <type>Sequence</type>
+    <name>Add EventNr</name>
+    <type>FieldsChangeSequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <start>1</start>
+    <increment>1</increment>
+    <resultfieldName>EventNr</resultfieldName>
+    <fields>
+      <field>
+        <name>Id</name>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1363</xloc>
+      <yloc>310</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculator</name>
+    <type>Calculator</type>
     <description/>
     <distribute>N</distribute>
     <custom_distribution/>
@@ -989,17 +1026,21 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <valuename>DeliveryId</valuename>
-    <use_database>N</use_database>
-    <connection/>
-    <schema/>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name/>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>999999999</max_value>
-    <attributes/>
+    <calculation>
+      <field_name>Tmp1</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>InitiatingEventType</field_a>
+      <field_b>InternalMigration</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>2</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1008,47 +1049,76 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1145</xloc>
-      <yloc>223</yloc>
+      <xloc>582</xloc>
+      <yloc>168</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Aggregate to deliveries</name>
-    <type>GroupBy</type>
+    <name>Calculator 2</name>
+    <type>Calculator</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <all_rows>N</all_rows>
-    <ignore_aggregate>N</ignore_aggregate>
-    <field_ignore/>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>grp</prefix>
-    <add_linenr>N</add_linenr>
-    <linenr_fieldname/>
-    <give_back_row>N</give_back_row>
-    <group>
-      <field>
-        <name>MotherId</name>
-      </field>
-      <field>
-        <name>DoB</name>
-      </field>
-    </group>
+    <calculation>
+      <field_name>Tmp1</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>TerminatingEventType</field_a>
+      <field_b>InternalMigration_1</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>2</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1009</xloc>
+      <yloc>310</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>If field value is null</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <replaceAllByValue/>
+    <replaceAllMask/>
+    <selectFields>Y</selectFields>
+    <selectValuesType>N</selectValuesType>
+    <setEmptyStringAll>Y</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
     <fields>
       <field>
-        <aggregate>LiveBorn</aggregate>
-        <subject>MotherId</subject>
-        <type>COUNT_ALL</type>
-        <valuefield/>
+        <name>InternalMigration</name>
+        <value>_</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1057,14 +1127,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>993</xloc>
-      <yloc>44</yloc>
+      <xloc>582</xloc>
+      <yloc>38</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Births</name>
-    <type>FilterRows</type>
+    <name>If field value is null 2</name>
+    <type>IfNull</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1073,68 +1143,21 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <send_true_to>Select values 4</send_true_to>
-    <send_false_to>Ignore</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>EventCode</leftvalue>
-        <function>=</function>
-        <rightvalue/>
-        <value>
-          <name>constant</name>
-          <type>String</type>
-          <text>BTH</text>
-          <length>-1</length>
-          <precision>-1</precision>
-          <isnull>N</isnull>
-          <mask/>
-        </value>
-      </condition>
-    </compare>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>247</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>ChildId</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
+    <replaceAllByValue/>
+    <replaceAllMask/>
+    <selectFields>Y</selectFields>
+    <selectValuesType>N</selectValuesType>
+    <setEmptyStringAll>Y</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
     <fields>
       <field>
-        <name>ChildId</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
+        <name>InternalMigration_1</name>
+        <value>_</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1143,14 +1166,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>365</xloc>
-      <yloc>46</yloc>
+      <xloc>1009</xloc>
+      <yloc>524</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>ChildId 2</name>
-    <type>SortRows</type>
+    <name>Input_Inmigration</name>
+    <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1159,54 +1182,19 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>ChildId</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>496</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>De-serialize from file</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_Individuals.cube</name>
-    </file>
+    <connection>Snapshot</connection>
+    <sql>SELECT
+  Residence
+, InternalMigration
+
+FROM InMigrations
+
+</sql>
     <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <attributes/>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1215,14 +1203,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>96</xloc>
-      <yloc>48</yloc>
+      <xloc>358</xloc>
+      <yloc>524</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Ignore</name>
-    <type>Dummy</type>
+    <name>Input_Outmigration</name>
+    <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1231,37 +1219,19 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>247</xloc>
-      <yloc>224</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>IndividualEvents</name>
-    <type>CubeInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_IndividualEvents.cube</name>
-    </file>
+    <connection>Snapshot</connection>
+    <sql>SELECT
+  Residence
+, InternalMigration
+
+FROM OutMigrations
+Order BY Residence ASC
+</sql>
     <limit>0</limit>
-    <addfilenameresult>N</addfilenameresult>
-    <attributes/>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1270,8 +1240,231 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>96</xloc>
-      <yloc>128</yloc>
+      <xloc>797</xloc>
+      <yloc>168</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Input_Residence_Table</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>Snapshot</connection>
+    <sql>SELECT
+  R.Residence
+, R.Location
+, R.Id
+, R.StartDate
+, R.InitiatingEventType
+, R.StartObservation
+,OS.ObservationDate AS StartObservationDate
+, R.EndDate
+, R.TerminatingEventType
+, R.LastObservation
+,OE.ObservationDate AS EndObservationDate
+
+FROM Residences R
+JOIN Locations l ON l.Location=r.Location
+LEFT JOIN OBSERVATIONS OS ON R.StartObservation = OS.Observation
+LEFT JOIN OBSERVATIONS OE ON R.LastObservation = OE.Observation
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>69</xloc>
+      <yloc>168</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Map End Event</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>Tmp1_1</field_to_use>
+    <target_field>EndType</target_field>
+    <non_match_default>UNK</non_match_default>
+    <fields>
+      <field>
+        <source_value>MN</source_value>
+        <target_value>OMG</target_value>
+      </field>
+      <field>
+        <source_value>MY</source_value>
+        <target_value>EXT</target_value>
+      </field>
+      <field>
+        <source_value>D_</source_value>
+        <target_value>DTH</target_value>
+      </field>
+      <field>
+        <source_value>C_</source_value>
+        <target_value>OBS</target_value>
+      </field>
+      <field>
+        <source_value>DY</source_value>
+        <target_value>DTH</target_value>
+      </field>
+      <field>
+        <source_value>DN</source_value>
+        <target_value>DTH</target_value>
+      </field>
+      <field>
+        <source_value>CY</source_value>
+        <target_value>OBS</target_value>
+      </field>
+      <field>
+        <source_value>CN</source_value>
+        <target_value>OBS</target_value>
+      </field>
+      <field>
+        <source_value>M_</source_value>
+        <target_value>OMG</target_value>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1009</xloc>
+      <yloc>168</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Map_StartEvent_to_Number</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>StartType</field_to_use>
+    <target_field>StartSeq</target_field>
+    <non_match_default>9</non_match_default>
+    <fields>
+      <field>
+        <source_value>ENU</source_value>
+        <target_value>1</target_value>
+      </field>
+      <field>
+        <source_value>BTH</source_value>
+        <target_value>2</target_value>
+      </field>
+      <field>
+        <source_value>IMG</source_value>
+        <target_value>3</target_value>
+      </field>
+      <field>
+        <source_value>ENT</source_value>
+        <target_value>4</target_value>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1170</xloc>
+      <yloc>38</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Map_Start_Event</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>Tmp1</field_to_use>
+    <target_field>StartType</target_field>
+    <non_match_default>UNK</non_match_default>
+    <fields>
+      <field>
+        <source_value>A_</source_value>
+        <target_value>ENU</target_value>
+      </field>
+      <field>
+        <source_value>B_</source_value>
+        <target_value>BTH</target_value>
+      </field>
+      <field>
+        <source_value>MY</source_value>
+        <target_value>ENT</target_value>
+      </field>
+      <field>
+        <source_value>MN</source_value>
+        <target_value>IMG</target_value>
+      </field>
+      <field>
+        <source_value>AY</source_value>
+        <target_value>ENU</target_value>
+      </field>
+      <field>
+        <source_value>AN</source_value>
+        <target_value>ENU</target_value>
+      </field>
+      <field>
+        <source_value>BY</source_value>
+        <target_value>BTH</target_value>
+      </field>
+      <field>
+        <source_value>BN</source_value>
+        <target_value>BTH</target_value>
+      </field>
+      <field>
+        <source_value>M_</source_value>
+        <target_value>IMG</target_value>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>582</xloc>
+      <yloc>310</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1279,7 +1472,7 @@
     <name>Merge Join</name>
     <type>MergeJoin</type>
     <description/>
-    <distribute>N</distribute>
+    <distribute>Y</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -1287,15 +1480,14 @@
       <schema_name/>
     </partitioning>
     <join_type>LEFT OUTER</join_type>
-    <step1>ChildId 2</step1>
-    <step2>ChildId</step2>
+    <step1>Sort Residence</step1>
+    <step2>Select values</step2>
     <keys_1>
-      <key>ChildId</key>
+      <key>Residence</key>
     </keys_1>
     <keys_2>
-      <key>ChildId</key>
+      <key>Residence</key>
     </keys_2>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1304,8 +1496,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>533</xloc>
-      <yloc>46</yloc>
+      <xloc>358</xloc>
+      <yloc>168</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1313,7 +1505,7 @@
     <name>Merge Join 2</name>
     <type>MergeJoin</type>
     <description/>
-    <distribute>N</distribute>
+    <distribute>Y</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -1321,17 +1513,14 @@
       <schema_name/>
     </partitioning>
     <join_type>LEFT OUTER</join_type>
-    <step1>MotherId DoB</step1>
-    <step2>Add DeliveryId</step2>
+    <step1>Sort Residence 2</step1>
+    <step2>Select values 3</step2>
     <keys_1>
-      <key>MotherId</key>
-      <key>DoB</key>
+      <key>Residence</key>
     </keys_1>
     <keys_2>
-      <key>MotherId</key>
-      <key>DoB</key>
+      <key>Residence</key>
     </keys_2>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1340,273 +1529,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>608</xloc>
-      <yloc>225</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Mother Is Null</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1307</xloc>
-      <yloc>44</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>MotherId DoB</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>MotherId</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>DoB</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>608</xloc>
-      <yloc>134</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>MotherId DoB 2</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>MotherId</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>DoB</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1145</xloc>
-      <yloc>134</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>MotherId null</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Mother Is Null</send_true_to>
-    <send_false_to>MotherId DoB 2</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>MotherId</leftvalue>
-        <function>IS NULL</function>
-        <rightvalue/>
-        <value>
-          <name>constant</name>
-          <type>Integer</type>
-          <text>1</text>
-          <length>-1</length>
-          <precision>0</precision>
-          <isnull>N</isnull>
-          <mask>#;-#</mask>
-        </value>
-      </condition>
-    </compare>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1146</xloc>
-      <yloc>44</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Save Child Delivery Info</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_ChildDeliveryInfo.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>608</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Save Deliveries 2</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_Deliveries.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1392</xloc>
-      <yloc>224</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select Mother &amp; ChildIds</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>IndividualId</name>
-        <rename>ChildId</rename>
-      </field>
-      <field>
-        <name>MotherUid</name>
-        <rename>MotherId</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>247</xloc>
-      <yloc>47</yloc>
+      <xloc>797</xloc>
+      <yloc>524</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1623,14 +1547,30 @@
     </partitioning>
     <fields>
       <field>
-        <name>MotherId</name>
+        <name>Residence</name>
       </field>
       <field>
-        <name>DoB</name>
+        <name>InternalMigration</name>
       </field>
       <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>InternalMigration</name>
+        <rename>InternalMigration</rename>
+        <type>String</type>
+        <length>1</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
     </fields>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1639,8 +1579,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>691</xloc>
-      <yloc>46</yloc>
+      <xloc>358</xloc>
+      <yloc>310</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1657,17 +1597,80 @@
     </partitioning>
     <fields>
       <field>
-        <name>ChildId</name>
+        <name>Residence</name>
       </field>
       <field>
-        <name>MotherId</name>
+        <name>Location</name>
       </field>
       <field>
-        <name>DeliveryId</name>
+        <name>Id</name>
+      </field>
+      <field>
+        <name>StartDate</name>
+      </field>
+      <field>
+        <name>InitiatingEventType</name>
+      </field>
+      <field>
+        <name>StartObservation</name>
+      </field>
+      <field>
+        <name>StartObservationDate</name>
+      </field>
+      <field>
+        <name>EndDate</name>
+      </field>
+      <field>
+        <name>TerminatingEventType</name>
+      </field>
+      <field>
+        <name>LastObservation</name>
+      </field>
+      <field>
+        <name>EndObservationDate</name>
+      </field>
+      <field>
+        <name>Residence_1</name>
+      </field>
+      <field>
+        <name>InternalMigration</name>
       </field>
       <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>InitiatingEventType</name>
+        <rename>InitiatingEventType</rename>
+        <type>String</type>
+        <length>2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>TerminatingEventType</name>
+        <rename>TerminatingEventType</rename>
+        <type>String</type>
+        <length>2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
     </fields>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1676,8 +1679,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>608</xloc>
-      <yloc>310</yloc>
+      <xloc>358</xloc>
+      <yloc>38</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1694,21 +1697,30 @@
     </partitioning>
     <fields>
       <field>
-        <name>MotherId</name>
+        <name>Residence</name>
       </field>
       <field>
-        <name>DoB</name>
-        <rename>DeliveryDate</rename>
-      </field>
-      <field>
-        <name>LiveBorn</name>
-      </field>
-      <field>
-        <name>DeliveryId</name>
+        <name>InternalMigration</name>
       </field>
       <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>InternalMigration</name>
+        <rename>InternalMigration</rename>
+        <type>String</type>
+        <length>1</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
     </fields>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1717,8 +1729,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1259</xloc>
-      <yloc>222</yloc>
+      <xloc>797</xloc>
+      <yloc>310</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1726,7 +1738,7 @@
     <name>Select values 4</name>
     <type>SelectValues</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -1735,16 +1747,34 @@
     </partitioning>
     <fields>
       <field>
-        <name>IndividualId</name>
-        <rename>ChildId</rename>
+        <name>Residence</name>
       </field>
       <field>
-        <name>EventDate</name>
-        <rename>DoB</rename>
+        <name>Location</name>
+      </field>
+      <field>
+        <name>Id</name>
+      </field>
+      <field>
+        <name>StartObservationDate</name>
+      </field>
+      <field>
+        <name>StartType</name>
+      </field>
+      <field>
+        <name>StartDate</name>
+      </field>
+      <field>
+        <name>EndObservationDate</name>
+      </field>
+      <field>
+        <name>EndType</name>
+      </field>
+      <field>
+        <name>EndDate</name>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1753,13 +1783,152 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>368</xloc>
-      <yloc>128</yloc>
+      <xloc>1009</xloc>
+      <yloc>38</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort by MotherId &amp; DoB</name>
+    <name>Select values 5</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>Id</name>
+        <rename>IndividualID</rename>
+      </field>
+      <field>
+        <name>EventType</name>
+        <rename>EventCode</rename>
+      </field>
+      <field>
+        <name>EventDate</name>
+      </field>
+      <field>
+        <name>EventNr</name>
+      </field>
+      <field>
+        <name>ObservationDate</name>
+      </field>
+      <field>
+        <name>Location</name>
+        <rename>LocationID</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>IndividualId</name>
+        <rename>IndividualId</rename>
+        <type>String</type>
+        <length>128</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>LocationId</name>
+        <rename>LocationId</rename>
+        <type>String</type>
+        <length>128</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1363</xloc>
+      <yloc>418</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort Ind StartDate StartSeq</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Id</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>StartDate</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>StartSeq</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1363</xloc>
+      <yloc>38</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort Residence</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -1778,23 +1947,14 @@
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>MotherId</name>
+        <name>Residence</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
         <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
-      <field>
-        <name>DoB</name>
-        <ascending>Y</ascending>
-        <case_sensitive>Y</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
     </fields>
-    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1803,8 +1963,176 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>837</xloc>
-      <yloc>45</yloc>
+      <xloc>216</xloc>
+      <yloc>168</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort Residence 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Residence</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>582</xloc>
+      <yloc>524</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort Residence 3</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Residence</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>358</xloc>
+      <yloc>418</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Split Start &amp; End Events</name>
+    <type>Normaliser</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <typefield>EventSeq</typefield>
+    <fields>
+      <field>
+        <name>StartDate</name>
+        <value>1</value>
+        <norm>EventDate</norm>
+      </field>
+      <field>
+        <name>StartType</name>
+        <value>1</value>
+        <norm>EventType</norm>
+      </field>
+      <field>
+        <name>StartObservationDate</name>
+        <value>1</value>
+        <norm>ObservationDate</norm>
+      </field>
+      <field>
+        <name>EndDate</name>
+        <value>2</value>
+        <norm>EventDate</norm>
+      </field>
+      <field>
+        <name>EndType</name>
+        <value>2</value>
+        <norm>EventType</norm>
+      </field>
+      <field>
+        <name>EndObservationDate</name>
+        <value>2</value>
+        <norm>ObservationDate</norm>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1363</xloc>
+      <yloc>168</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Output IndividualEvents</name>
+    <type>CubeOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_IndividualEvents.cube</name>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+    </file>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1360</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1813,5 +2141,4 @@
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
-  <attributes/>
 </transformation>

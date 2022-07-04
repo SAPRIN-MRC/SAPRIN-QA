@@ -4,17 +4,43 @@
   <extended_description>Creates csv file from ${BaseName}_S03 Table</extended_description>
   <job_version/>
   <job_status>0</job_status>
-  <directory>/public/iSHARE</directory>
+  <directory>/SAPRIN-QA</directory>
   <created_user>-</created_user>
   <created_date>2013/06/12 09:43:45.813</created_date>
   <modified_user>kherbst</modified_user>
-  <modified_date>2018/09/16 11:46:36.528</modified_date>
+  <modified_date>2022/06/14 14:03:35.217</modified_date>
   <parameters>
     </parameters>
   <slaveservers>
     <slaveserver>
+      <name>acs-etl01</name>
+      <hostname>acs-etl01</hostname>
+      <port>8080</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
       <name>ACS-ETL01 Carte</name>
       <hostname>ACS-ETL01</hostname>
+      <port>8081</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>Carte</name>
+      <hostname>Pentaho.ahri.org</hostname>
       <port>8081</port>
       <webAppName/>
       <username>cluster</username>
@@ -39,9 +65,22 @@
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
-      <name>Carte</name>
-      <hostname>Pentaho.ahri.org</hostname>
-      <port>8081</port>
+      <name>cm-metricsapp01</name>
+      <hostname>cm-metricsapp01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb01</name>
+      <hostname>cm-metricsdb01</hostname>
+      <port>40000</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -49,6 +88,45 @@
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb02</name>
+      <hostname>cm-metricsdb02</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb03</name>
+      <hostname>cm-metricsdb03</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsetl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -62,6 +140,19 @@
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>etl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -81,6 +172,71 @@
       <name>ID-Server</name>
       <hostname>localhost</hostname>
       <port>8181</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local1</name>
+      <hostname>localhost</hostname>
+      <port>40001</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local2</name>
+      <hostname>localhost</hostname>
+      <port>40002</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local3</name>
+      <hostname>localhost</hostname>
+      <port>40003</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local4</name>
+      <hostname>localhost</hostname>
+      <port>40004</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local5</name>
+      <hostname>localhost</hostname>
+      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -159,162 +315,6 @@
       <name>Slave3</name>
       <hostname>localhost</hostname>
       <port>8084</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>acs-etl01</name>
-      <hostname>acs-etl01</hostname>
-      <port>8080</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsapp01</name>
-      <hostname>cm-metricsapp01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb01</name>
-      <hostname>cm-metricsdb01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb02</name>
-      <hostname>cm-metricsdb02</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb03</name>
-      <hostname>cm-metricsdb03</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsetl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>etl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local1</name>
-      <hostname>localhost</hostname>
-      <port>40001</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local2</name>
-      <hostname>localhost</hostname>
-      <port>40002</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local3</name>
-      <hostname>localhost</hostname>
-      <port>40003</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local4</name>
-      <hostname>localhost</hostname>
-      <port>40004</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local5</name>
-      <hostname>localhost</hostname>
-      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -654,6 +654,7 @@
       <name>START</name>
       <description/>
       <type>SPECIAL</type>
+      <attributes/>
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -669,16 +670,18 @@
       <nr>0</nr>
       <xloc>80</xloc>
       <yloc>144</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J09-01 Output Final MicroData</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J09-01 Output Final MicroData</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -698,6 +701,7 @@
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -706,16 +710,18 @@
       <nr>0</nr>
       <xloc>288</xloc>
       <yloc>144</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J09-02 Generate MD5 Fingerprint for Final Microdata</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J09-02 Generate MD5 Fingerprint for Final Microdata</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -735,6 +741,7 @@
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -743,21 +750,25 @@
       <nr>0</nr>
       <xloc>293</xloc>
       <yloc>384</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Success</name>
       <description/>
       <type>SUCCESS</type>
+      <attributes/>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>293</xloc>
       <yloc>511</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Wait for lock on output file to be released</name>
       <description/>
       <type>DELAY</type>
+      <attributes/>
       <maximumTimeout>5</maximumTimeout>
       <scaletime>0</scaletime>
       <parallel>N</parallel>
@@ -765,6 +776,7 @@
       <nr>0</nr>
       <xloc>293</xloc>
       <yloc>274</yloc>
+      <attributes_kjc/>
     </entry>
   </entries>
   <hops>
@@ -817,10 +829,6 @@
     </group>
     <group>
       <name>{"_":"Embedded MetaStore Elements","namespace":"pentaho","type":"Default Run Configuration"}</name>
-      <attribute>
-        <key>Pentaho local</key>
-        <value>{"children":[{"children":[],"id":"server","value":null},{"children":[],"id":"clustered","value":"N"},{"children":[],"id":"name","value":"Pentaho local"},{"children":[],"id":"description","value":null},{"children":[],"id":"pentaho","value":"N"},{"children":[],"id":"readOnly","value":"Y"},{"children":[],"id":"sendResources","value":"N"},{"children":[],"id":"logRemoteExecutionLocally","value":"N"},{"children":[],"id":"remote","value":"N"},{"children":[],"id":"local","value":"Y"},{"children":[],"id":"showTransformations","value":"N"}],"id":"Pentaho local","value":null,"name":"Pentaho local","owner":null,"ownerPermissionsList":[]}</value>
-      </attribute>
     </group>
   </attributes>
 </job>

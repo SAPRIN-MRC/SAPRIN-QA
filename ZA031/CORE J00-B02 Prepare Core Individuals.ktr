@@ -6,7 +6,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/public/iSHARE/ZA031</directory>
+    <directory>/SAPRIN-QA/ZA031</directory>
     <parameters>
     </parameters>
     <log>
@@ -860,25 +860,33 @@
     <created_user>kherbst</created_user>
     <created_date>2018/09/13 11:57:20.033</created_date>
     <modified_user>kherbst</modified_user>
-    <modified_date>2018/10/16 09:54:27.157</modified_date>
-    <key_for_session_key/>
+    <modified_date>2022/06/22 16:08:59.800</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
-    <name>Snapshot</name>
-    <server>${Server}</server>
+    <name>ACDIS_SAPRIN202206</name>
+    <server>SAPRIN</server>
     <type>MSSQLNATIVE</type>
     <access>Native</access>
-    <database>${Database}</database>
+    <database>ACDIS_SAPRIN202206</database>
     <port>1433</port>
-    <username>saprin-sa</username>
-    <password>Encrypted 2be98afc86a959d95fd31a834d788e1de</password>
+    <username/>
+    <password>Encrypted </password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MSSQLNATIVE.encrypt</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MSSQLNATIVE.trustServerCertificate</code>
+        <attribute>true</attribute>
+      </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
@@ -893,7 +901,7 @@
       </attribute>
       <attribute>
         <code>MSSQLUseIntegratedSecurity</code>
-        <attribute>false</attribute>
+        <attribute>true</attribute>
       </attribute>
       <attribute>
         <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
@@ -905,7 +913,7 @@
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>N</attribute>
+        <attribute>Y</attribute>
       </attribute>
       <attribute>
         <code>QUOTE_ALL_FIELDS</code>
@@ -913,11 +921,11 @@
       </attribute>
       <attribute>
         <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>N</attribute>
+        <attribute>Y</attribute>
       </attribute>
       <attribute>
         <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>N</attribute>
+        <attribute>Y</attribute>
       </attribute>
       <attribute>
         <code>USE_POOLING</code>
@@ -948,7 +956,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Snapshot</connection>
+    <connection>ACDIS_SAPRIN202206</connection>
     <sql>SELECT
   I.IntID IndividualId
 , CASE
@@ -967,6 +975,102 @@ ORDER BY IndividualId
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>IndividualId</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input Individuals</origin>
+        <comments>IndividualId</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ZA</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>Sex</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input Individuals</origin>
+        <comments>Sex</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ZA</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>DoB</name>
+        <length>3</length>
+        <precision>-1</precision>
+        <origin>Input Individuals</origin>
+        <comments>DoB</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ZA</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>MotherUid</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Input Individuals</origin>
+        <comments>MotherUid</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ZA</date_format_locale>
+        <date_format_timezone>Africa/Harare</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -976,6 +1080,36 @@ ORDER BY IndividualId
     </remotesteps>
     <GUI>
       <xloc>93</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Output Individuals</name>
+    <type>CubeOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <file>
+      <name>${OutputDirectory}\${SiteCode}_Individuals.cube</name>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+    </file>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>415</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
@@ -994,19 +1128,15 @@ ORDER BY IndividualId
     <fields>
       <field>
         <name>IndividualId</name>
-        <rename/>
       </field>
       <field>
         <name>Sex</name>
-        <rename/>
       </field>
       <field>
         <name>DoB</name>
-        <rename/>
       </field>
       <field>
         <name>MotherUid</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -1044,6 +1174,7 @@ ORDER BY IndividualId
         <storage_type/>
       </meta>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1057,38 +1188,10 @@ ORDER BY IndividualId
       <draw>Y</draw>
     </GUI>
   </step>
-  <step>
-    <name>Output Individuals</name>
-    <type>CubeOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <file>
-      <name>${OutputDirectory}\${SiteCode}_Individuals.cube</name>
-      <add_to_result_filenames>N</add_to_result_filenames>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-    </file>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>415</xloc>
-      <yloc>80</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
   <step_error_handling>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
+  <attributes/>
 </transformation>

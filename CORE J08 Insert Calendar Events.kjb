@@ -11,17 +11,43 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
 </extended_description>
   <job_version/>
   <job_status>0</job_status>
-  <directory>/public/iSHARE</directory>
+  <directory>/SAPRIN-QA</directory>
   <created_user>-</created_user>
   <created_date>2013/05/17 11:33:48.869</created_date>
   <modified_user>tmudzana</modified_user>
-  <modified_date>2018/10/05 03:41:50.496</modified_date>
+  <modified_date>2022/06/14 14:02:22.867</modified_date>
   <parameters>
     </parameters>
   <slaveservers>
     <slaveserver>
+      <name>acs-etl01</name>
+      <hostname>acs-etl01</hostname>
+      <port>8080</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
       <name>ACS-ETL01 Carte</name>
       <hostname>ACS-ETL01</hostname>
+      <port>8081</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>Carte</name>
+      <hostname>Pentaho.ahri.org</hostname>
       <port>8081</port>
       <webAppName/>
       <username>cluster</username>
@@ -46,9 +72,22 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
-      <name>Carte</name>
-      <hostname>Pentaho.ahri.org</hostname>
-      <port>8081</port>
+      <name>cm-metricsapp01</name>
+      <hostname>cm-metricsapp01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb01</name>
+      <hostname>cm-metricsdb01</hostname>
+      <port>40000</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -56,6 +95,45 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb02</name>
+      <hostname>cm-metricsdb02</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsdb03</name>
+      <hostname>cm-metricsdb03</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>cm-metricsetl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -69,6 +147,19 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <proxy_port/>
       <non_proxy_hosts/>
       <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>etl01</name>
+      <hostname>cm-metricsetl01</hostname>
+      <port>40000</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
       <sslMode>N</sslMode>
     </slaveserver>
     <slaveserver>
@@ -88,6 +179,71 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <name>ID-Server</name>
       <hostname>localhost</hostname>
       <port>8181</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local1</name>
+      <hostname>localhost</hostname>
+      <port>40001</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>Y</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local2</name>
+      <hostname>localhost</hostname>
+      <port>40002</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local3</name>
+      <hostname>localhost</hostname>
+      <port>40003</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local4</name>
+      <hostname>localhost</hostname>
+      <port>40004</port>
+      <webAppName/>
+      <username>cluster</username>
+      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+      <proxy_hostname/>
+      <proxy_port/>
+      <non_proxy_hosts/>
+      <master>N</master>
+      <sslMode>N</sslMode>
+    </slaveserver>
+    <slaveserver>
+      <name>local5</name>
+      <hostname>localhost</hostname>
+      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -166,162 +322,6 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <name>Slave3</name>
       <hostname>localhost</hostname>
       <port>8084</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>acs-etl01</name>
-      <hostname>acs-etl01</hostname>
-      <port>8080</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsapp01</name>
-      <hostname>cm-metricsapp01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb01</name>
-      <hostname>cm-metricsdb01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb02</name>
-      <hostname>cm-metricsdb02</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsdb03</name>
-      <hostname>cm-metricsdb03</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>cm-metricsetl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>etl01</name>
-      <hostname>cm-metricsetl01</hostname>
-      <port>40000</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local1</name>
-      <hostname>localhost</hostname>
-      <port>40001</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>Y</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local2</name>
-      <hostname>localhost</hostname>
-      <port>40002</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local3</name>
-      <hostname>localhost</hostname>
-      <port>40003</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local4</name>
-      <hostname>localhost</hostname>
-      <port>40004</port>
-      <webAppName/>
-      <username>cluster</username>
-      <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-      <proxy_hostname/>
-      <proxy_port/>
-      <non_proxy_hosts/>
-      <master>N</master>
-      <sslMode>N</sslMode>
-    </slaveserver>
-    <slaveserver>
-      <name>local5</name>
-      <hostname>localhost</hostname>
-      <port>40005</port>
       <webAppName/>
       <username>cluster</username>
       <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
@@ -661,11 +661,12 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <name>CORE J08-01 Determine Resident Status</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J08-01 Determine Resident Status</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -685,6 +686,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -693,11 +695,13 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <nr>0</nr>
       <xloc>352</xloc>
       <yloc>96</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>START</name>
       <description/>
       <type>SPECIAL</type>
+      <attributes/>
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -713,16 +717,18 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <nr>0</nr>
       <xloc>112</xloc>
       <yloc>96</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>CORE J08-02 Insert Calendar Year Events</name>
       <description/>
       <type>TRANS</type>
+      <attributes/>
       <specification_method>rep_name</specification_method>
       <trans_object_id/>
       <filename/>
       <transname>CORE J08-02 Insert Calendar Year Events</transname>
-      <directory>${Internal.Entry.Current.Directory}</directory>
+      <directory>/SAPRIN-QA</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -742,6 +748,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -750,21 +757,25 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <nr>0</nr>
       <xloc>752</xloc>
       <yloc>96</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Success</name>
       <description/>
       <type>SUCCESS</type>
+      <attributes/>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>752</xloc>
       <yloc>208</yloc>
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>S04_Temp</name>
       <description/>
       <type>DELETE_FILE</type>
+      <attributes/>
       <filename>${OutputDirectory}\${SiteCode}_${DataSetIdentifier}_v${CurrentVersion}_S04_Temp.cube</filename>
       <fail_if_file_not_exists>N</fail_if_file_not_exists>
       <parallel>N</parallel>
@@ -772,6 +783,7 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
       <nr>0</nr>
       <xloc>352</xloc>
       <yloc>208</yloc>
+      <attributes_kjc/>
     </entry>
   </entries>
   <hops>
@@ -824,10 +836,6 @@ BDM at 06h00 if they turn 28 days old, e.g. if born on June 1st this will be Jun
     </group>
     <group>
       <name>{"_":"Embedded MetaStore Elements","namespace":"pentaho","type":"Default Run Configuration"}</name>
-      <attribute>
-        <key>Pentaho local</key>
-        <value>{"children":[{"children":[],"id":"server","value":null},{"children":[],"id":"clustered","value":"N"},{"children":[],"id":"name","value":"Pentaho local"},{"children":[],"id":"description","value":null},{"children":[],"id":"pentaho","value":"N"},{"children":[],"id":"readOnly","value":"Y"},{"children":[],"id":"sendResources","value":"N"},{"children":[],"id":"logRemoteExecutionLocally","value":"N"},{"children":[],"id":"remote","value":"N"},{"children":[],"id":"local","value":"Y"},{"children":[],"id":"showTransformations","value":"N"}],"id":"Pentaho local","value":null,"name":"Pentaho local","owner":null,"ownerPermissionsList":[]}</value>
-      </attribute>
     </group>
   </attributes>
 </job>
